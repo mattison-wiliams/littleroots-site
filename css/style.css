@@ -306,6 +306,8 @@ img {
 
 .faq-answer {
   padding: 0 4px 20px;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding-bottom 0.3s ease;
 }
 
 .faq-answer p {

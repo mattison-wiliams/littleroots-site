@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%232E5E2E'/><path d='M50 72C50 45 32 32 50 18 68 32 50 45 50 72Z' fill='%23FFF9F0' opacity='0.9'/></svg>">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -170,6 +171,50 @@
       const isOpen = navLinks.classList.toggle('open');
       hamburger.classList.toggle('active');
       hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Smooth FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const summary = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+
+      // Set initial state for items that start open
+      if (item.open) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity = '1';
+      }
+
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (item.open) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          requestAnimationFrame(() => {
+            answer.style.maxHeight = '0';
+            answer.style.opacity = '0';
+            answer.style.paddingBottom = '0';
+          });
+          answer.addEventListener('transitionend', function handler() {
+            item.open = false;
+            answer.removeEventListener('transitionend', handler);
+          });
+        } else {
+          item.open = true;
+          const h = answer.scrollHeight;
+          answer.style.maxHeight = '0';
+          answer.style.opacity = '0';
+          answer.style.paddingBottom = '0';
+          requestAnimationFrame(() => {
+            answer.style.maxHeight = h + 'px';
+            answer.style.opacity = '1';
+            answer.style.paddingBottom = '20px';
+          });
+          answer.addEventListener('transitionend', function handler() {
+            answer.style.maxHeight = 'none';
+            answer.removeEventListener('transitionend', handler);
+          });
+        }
+      });
     });
   </script>
 
