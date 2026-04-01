@@ -250,6 +250,21 @@
         }
       });
     });
+
+    // Auto-open and scroll to a hashed FAQ item (e.g. /faq#founding-families)
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target && target.classList.contains('faq-item')) {
+        const answer = target.querySelector('.faq-answer');
+        target.open = true;
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity = '1';
+        answer.style.paddingBottom = '20px';
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+      }
+    }
   </script>
 
 </body>
