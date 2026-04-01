@@ -235,6 +235,10 @@ img {
   object-fit: cover;
 }
 
+.caterpillar-crop {
+  clip-path: inset(10% 0 30% 0);
+}
+
 /* ===== Timeline / Cards ===== */
 .timeline {
   display: grid;
