@@ -421,6 +421,84 @@ img {
   margin-bottom: 0;
 }
 
+/* ===== Summer Details (Hero) ===== */
+.summer-details {
+  max-width: 480px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.summer-dates {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  color: var(--forest-green);
+  margin-bottom: 4px;
+}
+
+.summer-info {
+  font-size: 0.92rem;
+  color: var(--warm-brown);
+  margin-bottom: 8px;
+}
+
+.summer-pricing {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--warm-brown);
+  margin-bottom: 4px;
+}
+
+.summer-note {
+  font-size: 0.82rem;
+  color: var(--sage);
+  font-style: italic;
+}
+
+/* ===== Schedule Note ===== */
+.schedule-note {
+  text-align: center;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--sage);
+  margin-top: -24px;
+  margin-bottom: 32px;
+}
+
+/* ===== Card Time Labels ===== */
+.card-time {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--sage);
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+}
+
+/* ===== Crown Callout (Homepage) ===== */
+.crown-callout {
+  background:
+    radial-gradient(ellipse at 30% 50%, rgba(184, 92, 56, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 40%, rgba(122, 154, 109, 0.12) 0%, transparent 55%),
+    linear-gradient(180deg, var(--sage-light) 0%, var(--cream) 100%);
+}
+
+.crown-callout-content {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.crown-callout-content .section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.crown-callout-content p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--warm-brown);
+}
+
 /* ===== Footer ===== */
 .site-footer {
   background-color: var(--forest-green);
