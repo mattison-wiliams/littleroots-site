@@ -398,6 +398,22 @@ img {
   line-height: 1.7;
 }
 
+/* ===== Approach: Intro Text ===== */
+.approach-intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.approach-intro p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.approach-intro p:last-child {
+  margin-bottom: 0;
+}
+
 /* ===== About: Crown Ceremony ===== */
 .crown-ceremony {
   background:
