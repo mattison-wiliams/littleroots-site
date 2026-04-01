@@ -227,6 +227,14 @@ img {
   fill: var(--cream);
 }
 
+.intro-photo-img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  object-fit: cover;
+}
+
 /* ===== Timeline / Cards ===== */
 .timeline {
   display: grid;
