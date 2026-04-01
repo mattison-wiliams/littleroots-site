@@ -100,6 +100,16 @@ img {
   font-size: 1.6rem;
   color: var(--forest-green);
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 44px;
+  width: 44px;
+  object-fit: contain;
+  border-radius: 50%;
 }
 
 .logo span {
