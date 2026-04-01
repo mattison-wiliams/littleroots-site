@@ -277,12 +277,13 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 20px 4px;
-  font-family: 'Caveat', cursive;
+  font-family: 'Lora', Georgia, serif;
   font-size: 1.5rem;
   color: var(--forest-green);
   cursor: pointer;
   list-style: none;
   line-height: 1.3;
+  font-weight: 600;
 }
 
 .faq-question::-webkit-details-marker {
