@@ -41,11 +41,21 @@ h3 { font-size: 1.6rem; }
 
 a {
   color: var(--forest-green);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: var(--rust);
+  color: #9C4E30;
+}
+
+/* Remove underlines from navigation, logo, buttons, and footer links —
+   these are clearly interactive by context and don't need underlines */
+.nav-links a,
+.logo,
+.btn,
+.skip-link,
+.footer-links a {
+  text-decoration: none;
 }
 
 img {
@@ -114,9 +124,9 @@ img {
 }
 
 .btn:hover {
-  background-color: var(--rust);
+  background-color: #9C4E30;
   color: var(--cream);
-  box-shadow: 0 4px 12px rgba(184, 92, 56, 0.3);
+  box-shadow: 0 4px 12px rgba(156, 78, 48, 0.3);
 }
 
 /* ===== Header / Nav ===== */
@@ -656,7 +666,7 @@ img {
 
 .footer-copy {
   font-size: 0.8rem;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 /* ===== Mobile ===== */
