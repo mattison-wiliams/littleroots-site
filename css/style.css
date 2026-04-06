@@ -804,6 +804,13 @@ img {
   margin-bottom: 20px;
 }
 
+.register-bundle-note {
+  font-size: 0.85rem;
+  color: var(--sage);
+  font-style: italic;
+  margin-top: 8px;
+}
+
 .register-contact {
   text-align: center;
   font-size: 0.95rem;
