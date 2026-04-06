@@ -210,6 +210,16 @@ img {
   margin-bottom: 0;
 }
 
+.pullquote {
+  font-family: 'Caveat', cursive;
+  font-size: 1.45rem;
+  color: var(--forest-green);
+  border-left: 3px solid var(--sage);
+  padding: 8px 0 8px 20px;
+  margin: 24px 0;
+  line-height: 1.4;
+}
+
 /* Photo placeholder */
 .photo-placeholder {
   background-color: var(--sage);
