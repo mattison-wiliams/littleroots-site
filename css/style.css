@@ -499,6 +499,27 @@ img {
   font-style: italic;
 }
 
+/* ===== Pricing Banner ===== */
+.pricing-banner {
+  background-color: var(--sage-light);
+  text-align: center;
+  padding: 20px 16px;
+  border-bottom: 1px solid #dde8d8;
+}
+
+.pricing-banner-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--warm-brown);
+  margin-bottom: 4px;
+}
+
+.pricing-banner-note {
+  font-size: 0.82rem;
+  color: var(--sage);
+  font-style: italic;
+}
+
 /* ===== Schedule Note ===== */
 .schedule-note {
   text-align: center;
