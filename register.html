@@ -22,6 +22,8 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header class="site-header">
     <div class="container nav-wrapper">
       <a href="/" class="logo"><img src="images/logo.png" alt="Little Roots Forest School logo" class="logo-img">Little Roots <span>Forest School</span></a>
@@ -30,7 +32,7 @@
         <span></span>
         <span></span>
       </button>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul class="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -41,6 +43,8 @@
       </nav>
     </div>
   </header>
+
+  <main id="main-content">
 
   <section class="hero" style="padding: 56px 0 48px;">
     <div class="container">
@@ -88,7 +92,7 @@
 
       <div class="register-form-area">
         <!-- REPLACE THIS URL with your actual Google Form embed URL -->
-        <iframe src="https://docs.google.com/forms/d/e/PLACEHOLDER/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading&hellip;</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/PLACEHOLDER/viewform?embedded=true" title="Little Roots Forest School registration form" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading&hellip;</iframe>
       </div>
 
       <div class="register-payment">
@@ -104,12 +108,14 @@
     </div>
   </section>
 
+  </main>
+
   <footer class="site-footer">
     <div class="container">
       <p class="footer-tagline">See you in the forest.</p>
       <p class="footer-details">Thursdays &middot; 9:30&ndash;11:00 AM &middot; McCollum Park, Everett, WA</p>
       <div class="footer-links">
-        <a href="https://www.instagram.com/littleroots.forestschool/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.instagram.com/littleroots.forestschool/" target="_blank" rel="noopener">Instagram <span class="sr-only">(opens in new tab)</span></a>
         <a href="mailto:hello@littleroots.school">hello@littleroots.school</a>
       </div>
       <p class="footer-copy">&copy; 2026 Little Roots Forest School</p>

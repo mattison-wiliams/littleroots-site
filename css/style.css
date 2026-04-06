@@ -12,6 +12,7 @@
   --warm-brown: #5C3A1E;
   --rust: #B85C38;
   --sage: #7A9A6D;
+  --sage-text: #527245;
   --cream: #FFF9F0;
   --sage-light: #f0f5ed;
 }
@@ -50,6 +51,45 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+/* ===== Accessibility ===== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 200;
+  padding: 12px 24px;
+  background-color: var(--forest-green);
+  color: var(--cream);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0 0 8px 8px;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: var(--cream);
+}
+
+*:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* ===== Utility ===== */
@@ -331,7 +371,7 @@ img {
   font-family: 'Lora', Georgia, serif;
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--sage);
+  color: var(--sage-text);
   margin-left: 16px;
   flex-shrink: 0;
   transition: transform 0.2s;
@@ -394,7 +434,7 @@ img {
 .teacher-role {
   font-size: 0.9rem;
   font-style: italic;
-  color: var(--sage);
+  color: var(--sage-text);
   margin-bottom: 12px;
 }
 
@@ -505,7 +545,7 @@ img {
 
 .summer-note {
   font-size: 0.82rem;
-  color: var(--sage);
+  color: var(--sage-text);
   font-style: italic;
 }
 
@@ -526,7 +566,7 @@ img {
 
 .pricing-banner-note {
   font-size: 0.82rem;
-  color: var(--sage);
+  color: var(--sage-text);
   font-style: italic;
 }
 
@@ -535,7 +575,7 @@ img {
   text-align: center;
   font-size: 0.88rem;
   font-style: italic;
-  color: var(--sage);
+  color: var(--sage-text);
   margin-top: -28px;
   margin-bottom: 36px;
 }
@@ -545,7 +585,7 @@ img {
   display: inline-block;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--sage);
+  color: var(--sage-text);
   letter-spacing: 0.03em;
   margin-bottom: 4px;
 }
@@ -616,7 +656,7 @@ img {
 
 .footer-copy {
   font-size: 0.8rem;
-  opacity: 0.55;
+  opacity: 0.7;
 }
 
 /* ===== Mobile ===== */
@@ -729,7 +769,7 @@ img {
 .register-spots {
   font-size: 0.9rem;
   font-style: italic;
-  color: var(--sage);
+  color: var(--sage-text);
   margin-bottom: 32px;
 }
 
@@ -806,7 +846,7 @@ img {
 
 .register-bundle-note {
   font-size: 0.85rem;
-  color: var(--sage);
+  color: var(--sage-text);
   font-style: italic;
   margin-top: 8px;
 }
