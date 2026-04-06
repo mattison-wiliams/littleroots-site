@@ -303,8 +303,8 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 20px 4px;
-  font-family: 'Lora', Georgia, serif;
-  font-size: 1.5rem;
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
   color: var(--forest-green);
   cursor: pointer;
   list-style: none;
