@@ -244,6 +244,14 @@ img {
   margin-bottom: 40px;
 }
 
+.section-divider {
+  border: 0;
+  border-top: 1px solid var(--sage);
+  max-width: 240px;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
 /* ===== What Is Little Roots ===== */
 .intro-grid {
   display: grid;
