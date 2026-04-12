@@ -784,6 +784,16 @@ img {
   line-height: 1.6;
 }
 
+.subcategory-title {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 12px;
+}
+
+.recommended-intro + .subcategory-title {
+  margin-top: 32px;
+}
+
 .product-block h3 {
   margin-bottom: 2px;
   line-height: 1.3;
