@@ -766,6 +766,35 @@ img {
 }
 
 /* ===== Recommended Page ===== */
+/* Scoped to .page-recommended so it only affects the gear page.
+   Section/subcategory headings use a clean sans-serif so the long product
+   guide is easier to scan, while the hero h1 stays in Caveat. */
+.page-recommended .section-title,
+.page-recommended .subcategory-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+.page-recommended .section-title {
+  font-size: 1.85rem;
+}
+
+.page-recommended .subcategory-title {
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  .page-recommended .section-title {
+    font-size: 1.6rem;
+  }
+
+  .page-recommended .subcategory-title {
+    font-size: 1.15rem;
+  }
+}
+
 .recommended-intro {
   max-width: 800px;
   margin: 0 auto;
