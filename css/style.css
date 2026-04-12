@@ -757,6 +757,85 @@ img {
   }
 }
 
+/* ===== Recommended Page ===== */
+.recommended-intro {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.recommended-intro p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.recommended-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.look-for {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  padding: 0 8px;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--sage-text);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.product-block h3 {
+  margin-bottom: 2px;
+  line-height: 1.3;
+}
+
+.product-block h3 + h3 {
+  margin-top: 4px;
+}
+
+.product-block h3 a {
+  text-decoration: none;
+  color: var(--forest-green);
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.product-block h3 a:hover {
+  color: #9C4E30;
+  border-bottom-color: #9C4E30;
+}
+
+.product-block > p {
+  margin-top: 14px;
+}
+
+.tip-callout {
+  max-width: 800px;
+  margin: 24px auto 0;
+  background-color: var(--sage-light);
+  border-left: 4px solid var(--forest-green);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.section--alt .tip-callout {
+  background-color: white;
+}
+
+.tip-callout p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.tip-label {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--forest-green);
+  margin-right: 6px;
+}
+
 /* ===== Register Page ===== */
 .register-content {
   max-width: 800px;
