@@ -770,7 +770,9 @@ img {
    Section/subcategory headings use a clean sans-serif so the long product
    guide is easier to scan, while the hero h1 stays in Caveat. */
 .page-recommended .section-title,
-.page-recommended .subcategory-title {
+.page-recommended .subcategory-title,
+.page-recommended .product-block h3,
+.page-recommended .product-block h4 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 600;
   letter-spacing: -0.005em;
@@ -785,6 +787,12 @@ img {
   margin-bottom: 14px;
 }
 
+.page-recommended .product-block h3,
+.page-recommended .product-block h4 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
 @media (max-width: 768px) {
   .page-recommended .section-title {
     font-size: 1.6rem;
@@ -792,6 +800,11 @@ img {
 
   .page-recommended .subcategory-title {
     font-size: 1.15rem;
+  }
+
+  .page-recommended .product-block h3,
+  .page-recommended .product-block h4 {
+    font-size: 1.05rem;
   }
 }
 
