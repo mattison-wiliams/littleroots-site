@@ -802,23 +802,28 @@ img {
   margin-top: 32px;
 }
 
-.product-block h3 {
+.product-block h3,
+.product-block h4 {
   margin-bottom: 2px;
   line-height: 1.3;
+  font-size: 1.6rem;
 }
 
-.product-block h3 + h3 {
+.product-block h3 + h3,
+.product-block h4 + h4 {
   margin-top: 4px;
 }
 
-.product-block h3 a {
+.product-block h3 a,
+.product-block h4 a {
   text-decoration: none;
   color: var(--forest-green);
   border-bottom: 2px solid transparent;
   transition: border-color 0.2s, color 0.2s;
 }
 
-.product-block h3 a:hover {
+.product-block h3 a:hover,
+.product-block h4 a:hover {
   color: #9C4E30;
   border-bottom-color: #9C4E30;
 }
