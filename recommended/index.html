@@ -69,17 +69,22 @@
   <!-- The Backpack -->
   <section class="section section--alt">
     <div class="container">
-      <h2 class="section-title">The Backpack</h2>
+      <div class="faq-list">
+        <details class="faq-item" id="the-backpack">
+          <summary class="faq-question">The Backpack</summary>
+          <div class="faq-answer">
+            <p class="look-for"><em>What to look for: chest clip, external water bottle pocket, lightweight enough for your toddler to carry themselves if desired (recommended size: 12L (up to 18L for older/taller toddlers))</em></p>
 
-      <p class="look-for"><em>What to look for: chest clip, external water bottle pocket, lightweight enough for your toddler to carry themselves if desired (recommended size: 12L (up to 18L for older/taller toddlers))</em></p>
+            <div class="belief-block product-block">
+              <h3><a href="https://www.rei.com/product/234943/rei-co-op-tarn-12-pack-kids" target="_blank" rel="noopener noreferrer">REI Co-op Tarn 12 L Pack (Kids) <span class="sr-only">(opens in new tab)</span></a></h3>
+              <p>Our top pick. Has a chest clip, water bottle pockets, and comes in fun colors. The 12L is the sweet spot for our 1 to 3 year olds who want to carry their own pack — big enough for a change of clothes, snack, and water bottle without being too bulky for little shoulders. (If your child is on the older or taller side and wants more room to grow into, REI also makes an <a href="https://www.rei.com/product/234944/rei-co-op-tarn-18-pack-kids" target="_blank" rel="noopener noreferrer">18 L version</a>.)</p>
+            </div>
 
-      <div class="belief-block product-block">
-        <h3><a href="https://www.rei.com/product/234943/rei-co-op-tarn-12-pack-kids" target="_blank" rel="noopener noreferrer">REI Co-op Tarn 12 L Pack (Kids) <span class="sr-only">(opens in new tab)</span></a></h3>
-        <p>Our top pick. Has a chest clip, water bottle pockets, and comes in fun colors. The 12L is the sweet spot for our 1 to 3 year olds who want to carry their own pack — big enough for a change of clothes, snack, and water bottle without being too bulky for little shoulders. (If your child is on the older or taller side and wants more room to grow into, REI also makes an <a href="https://www.rei.com/product/234944/rei-co-op-tarn-18-pack-kids" target="_blank" rel="noopener noreferrer">18 L version</a>.)</p>
-      </div>
-
-      <div class="tip-callout">
-        <p><span class="tip-label">Tip:</span>Label everything with your child&rsquo;s name. You would be amazed how many identical water bottles and backpacks show up on a Thursday morning.</p>
+            <div class="tip-callout">
+              <p><span class="tip-label">Tip:</span>Label everything with your child&rsquo;s name. You would be amazed how many identical water bottles and backpacks show up on a Thursday morning.</p>
+            </div>
+          </div>
+        </details>
       </div>
     </div>
   </section>
@@ -394,6 +399,65 @@
       hamburger.classList.toggle('active');
       hamburger.setAttribute('aria-expanded', isOpen);
     });
+
+    // Smooth FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const summary = item.querySelector('.faq-question');
+      const answer = item.querySelector('.faq-answer');
+
+      // Set initial state for items that start open
+      if (item.open) {
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity = '1';
+      }
+
+      summary.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (item.open) {
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+          requestAnimationFrame(() => {
+            answer.style.maxHeight = '0';
+            answer.style.opacity = '0';
+            answer.style.paddingBottom = '0';
+          });
+          answer.addEventListener('transitionend', function handler() {
+            item.open = false;
+            answer.removeEventListener('transitionend', handler);
+          });
+        } else {
+          item.open = true;
+          const h = answer.scrollHeight;
+          answer.style.maxHeight = '0';
+          answer.style.opacity = '0';
+          answer.style.paddingBottom = '0';
+          requestAnimationFrame(() => {
+            answer.style.maxHeight = h + 'px';
+            answer.style.opacity = '1';
+            answer.style.paddingBottom = '20px';
+          });
+          answer.addEventListener('transitionend', function handler() {
+            answer.style.maxHeight = 'none';
+            answer.removeEventListener('transitionend', handler);
+          });
+        }
+      });
+    });
+
+    // Auto-open and scroll to a hashed FAQ item (e.g. /recommended/#the-backpack)
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target && target.classList.contains('faq-item')) {
+        const answer = target.querySelector('.faq-answer');
+        target.open = true;
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity = '1';
+        answer.style.paddingBottom = '20px';
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
+      }
+    }
   </script>
 
 </body>
