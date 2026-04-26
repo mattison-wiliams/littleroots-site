@@ -339,6 +339,60 @@ img {
   margin: 0;
 }
 
+/* ===== Gear: Hero ===== */
+.gear-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.gear-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* subject is slightly right of center, in the bottom two-thirds of the portrait frame */
+  object-position: 55% 60%;
+  z-index: 0;
+}
+
+.gear-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.08) 0%,
+    rgba(0,0,0,.02) 35%,
+    rgba(0,0,0,.55) 100%
+  );
+}
+
+.gear-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.gear-hero h1 {
+  color: var(--cream);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.gear-hero .subtitle {
+  color: rgba(255,249,240,.88);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0;
+}
+
 /* ===== Sections ===== */
 .section {
   padding: 72px 0;
@@ -1042,11 +1096,13 @@ img {
     padding: 28px 28px;
   }
 
-  .about-hero {
+  .about-hero,
+  .gear-hero {
     min-height: 360px;
   }
 
-  .about-hero h1 {
+  .about-hero h1,
+  .gear-hero h1 {
     font-size: 2.8rem;
   }
 
@@ -1407,6 +1463,10 @@ img {
   }
 
   .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .gear-hero h1 {
     font-size: 2.2rem;
   }
 
