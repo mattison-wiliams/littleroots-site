@@ -945,6 +945,17 @@ img {
   text-align: left;
 }
 
+/* ===== About: CTA ===== */
+.about-cta {
+  background-color: var(--sage-light);
+  text-align: center;
+  padding: 72px 0;
+}
+
+.about-cta .section-title {
+  margin-bottom: 24px;
+}
+
 /* ===== Footer ===== */
 .footer-logo {
   width: 110px;
