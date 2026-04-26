@@ -156,8 +156,8 @@ img {
 }
 
 .logo-img {
-  height: 44px;
-  width: 44px;
+  height: 52px;
+  width: 52px;
   object-fit: contain;
   border-radius: 50%;
 }
@@ -211,16 +211,37 @@ img {
 .hero {
   text-align: center;
   padding: 80px 0 72px;
-  background:
-    radial-gradient(ellipse at 20% 50%, rgba(122, 154, 109, 0.25) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 30%, rgba(122, 154, 109, 0.18) 0%, transparent 55%),
-    radial-gradient(ellipse at 50% 80%, rgba(255, 249, 240, 0.9) 0%, transparent 70%),
-    linear-gradient(180deg, var(--sage-light) 0%, var(--cream) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 65%;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.12) 0%,
+    rgba(0,0,0,.0) 30%,
+    rgba(0,0,0,.0) 45%,
+    rgba(0,0,0,.6) 100%
+  );
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 16px;
+  color: var(--forest-green);
 }
 
 .hero .subtitle {
@@ -228,6 +249,309 @@ img {
   max-width: 520px;
   margin: 0 auto 32px;
   color: var(--warm-brown);
+  font-style: italic;
+}
+
+/* Photo hero (homepage) — light text over dark image */
+.hero--photo h1 {
+  color: var(--cream);
+}
+
+.hero--photo .subtitle {
+  color: rgba(255,249,240,.88);
+}
+
+.hero .summer-dates {
+  color: rgba(255,249,240,.85);
+}
+
+.hero .summer-info {
+  color: rgba(255,249,240,.85);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text-block {
+  background-color: rgba(46, 94, 46, 0.65);
+  border-radius: 16px;
+  padding: 36px 44px;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.hero-text-block .summer-details {
+  margin-bottom: 0;
+}
+
+/* ===== About: Hero ===== */
+.about-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.about-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.08) 0%,
+    rgba(0,0,0,.02) 35%,
+    rgba(0,0,0,.55) 100%
+  );
+}
+
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.about-hero h1 {
+  color: var(--cream);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.about-hero .subtitle {
+  color: rgba(255,249,240,.88);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0;
+}
+
+/* ===== Gear: Hero ===== */
+.gear-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.gear-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* subject is slightly right of center, in the bottom two-thirds of the portrait frame */
+  object-position: 55% 60%;
+  z-index: 0;
+}
+
+.gear-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.08) 0%,
+    rgba(0,0,0,.02) 35%,
+    rgba(0,0,0,.55) 100%
+  );
+}
+
+.gear-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.gear-hero h1 {
+  color: var(--cream);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.gear-hero .subtitle {
+  color: rgba(255,249,240,.88);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0;
+}
+
+/* ===== Approach: Hero ===== */
+.approach-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.approach-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+  z-index: 0;
+}
+
+.approach-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.08) 0%,
+    rgba(0,0,0,.02) 35%,
+    rgba(0,0,0,.55) 100%
+  );
+}
+
+.approach-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.approach-hero h1 {
+  color: var(--cream);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.approach-hero .subtitle {
+  color: rgba(255,249,240,.88);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0;
+}
+
+/* ===== Register: Hero ===== */
+.register-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.register-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* hand and mossy stump sit center-right in the portrait frame */
+  object-position: 62% 45%;
+  z-index: 0;
+}
+
+.register-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.08) 0%,
+    rgba(0,0,0,.02) 35%,
+    rgba(0,0,0,.55) 100%
+  );
+}
+
+.register-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.register-hero h1 {
+  color: var(--cream);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.register-hero .subtitle {
+  color: rgba(255,249,240,.88);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0;
+}
+
+/* ===== FAQ: Hero ===== */
+.faq-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.faq-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* sign fills most of the frame; keep it centred with a slight upward lean so "FOREST LOOP TRAIL" text stays visible above the overlay */
+  object-position: center 40%;
+  z-index: 0;
+}
+
+.faq-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.08) 0%,
+    rgba(0,0,0,.02) 35%,
+    rgba(0,0,0,.55) 100%
+  );
+}
+
+.faq-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.faq-hero h1 {
+  color: var(--cream);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.faq-hero .subtitle {
+  color: rgba(255,249,240,.88);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0;
 }
 
 /* ===== Sections ===== */
@@ -307,49 +631,107 @@ img {
   object-fit: cover;
 }
 
+/* ===== About: Our Story ===== */
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-story-photo {
+  position: sticky;
+  top: 96px;
+}
+
+.about-story-photo-img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 60%;
+  border-radius: 16px;
+  display: block;
+}
+
+.about-story-text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.78;
+}
+
+.about-story-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-signoff {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(122,154,109,.3);
+}
+
+.about-signoff-em {
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
+  color: var(--forest-green);
+  display: block;
+  margin-bottom: 14px;
+}
+
+.about-signoff-name {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--warm-brown);
+}
+
+.about-signoff-name strong {
+  display: block;
+  font-weight: 600;
+}
+
 .caterpillar-crop {
   clip-path: inset(10% 0 30% 0);
 }
 
-/* ===== Timeline / Cards ===== */
+/* ===== Timeline ===== */
 .timeline {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-}
-
-.timeline-card {
-  background: white;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 2px 12px rgba(92, 58, 30, 0.06);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.timeline-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(92, 58, 30, 0.1);
-}
-
-.timeline-card h3 {
-  margin-bottom: 8px;
-}
-
-.timeline-card p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-.card-icon {
-  width: 44px;
-  height: 44px;
-  background-color: var(--sage-light);
-  border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 12px;
-  font-size: 1.3rem;
+  flex-direction: column;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.tl-item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0 20px;
+  padding-bottom: 28px;
+}
+
+.tl-time {
+  font-family: 'Caveat', cursive;
+  font-size: 1.2rem;
+  color: var(--sage-text);
+  text-align: right;
+  padding-top: 2px;
+}
+
+.tl-body {
+  border-left: 1px solid rgba(122, 154, 109, .35);
+  padding-left: 20px;
+}
+
+.tl-item:last-child .tl-body {
+  border-left-color: transparent;
+}
+
+.tl-body h3 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.tl-body p {
+  font-size: .93rem;
+  line-height: 1.65;
 }
 
 /* ===== FAQ Accordion ===== */
@@ -461,6 +843,72 @@ img {
   line-height: 1.6;
 }
 
+/* ===== About: Teachers (redesign) ===== */
+.about-teachers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.about-teacher-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.about-teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.about-teacher h3 {
+  font-size: 1.9rem;
+  margin-bottom: 2px;
+}
+
+.about-teacher-role {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--sage-text);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.about-teacher-creds {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(122,154,109,.25);
+}
+
+.about-teacher-creds li {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--warm-brown);
+  padding-left: 14px;
+  position: relative;
+}
+
+.about-teacher-creds li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--sage);
+}
+
 /* ===== About: What We Believe ===== */
 .belief-block {
   max-width: 800px;
@@ -488,6 +936,38 @@ img {
 .belief-block p {
   font-size: 0.95rem;
   line-height: 1.7;
+}
+
+/* ===== About: What We Believe (redesign) ===== */
+.about-beliefs {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-belief {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(122,154,109,.18);
+}
+
+.about-belief:first-child {
+  padding-top: 0;
+}
+
+.about-belief:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about-belief h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.about-belief p {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  max-width: 62ch;
 }
 
 /* ===== Approach: Intro Text ===== */
@@ -567,25 +1047,46 @@ img {
   font-style: italic;
 }
 
-/* ===== Pricing Banner ===== */
-.pricing-banner {
-  background-color: var(--sage-light);
+/* ===== Founding Banner ===== */
+.founding-banner {
+  background-color: var(--forest-green);
+  color: var(--cream);
   text-align: center;
-  padding: 20px 16px;
-  border-bottom: 1px solid #dde8d8;
+  padding: 14px 5%;
+  font-size: .92rem;
 }
 
-.pricing-banner-text {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--warm-brown);
-  margin-bottom: 4px;
+.founding-banner strong {
+  color: #c8e6b8;
 }
 
-.pricing-banner-note {
-  font-size: 0.82rem;
-  color: var(--sage-text);
-  font-style: italic;
+.founding-banner a {
+  color: #c8e6b8;
+  text-decoration: underline;
+}
+
+/* ===== Pricing Block (What Is section) ===== */
+.pricing-block {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(122, 154, 109, .3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: .95rem;
+}
+
+.price-amount {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--forest-green);
 }
 
 /* ===== Schedule Note ===== */
@@ -598,15 +1099,6 @@ img {
   margin-bottom: 36px;
 }
 
-/* ===== Card Time Labels ===== */
-.card-time {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--sage-text);
-  letter-spacing: 0.03em;
-  margin-bottom: 4px;
-}
 
 /* ===== Crown Callout (Homepage) ===== */
 .crown-callout {
@@ -633,7 +1125,75 @@ img {
   color: var(--warm-brown);
 }
 
+.crown-photo-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.crown-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* left keeps rainbow/stump visible; bottom keeps lily-of-the-valley in frame */
+  object-position: 20% bottom;
+  z-index: 0;
+}
+
+.crown-photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(12,32,14,.15) 0%, rgba(12,32,14,.88) 100%);
+  z-index: 1;
+}
+
+.crown-photo-section .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.crown-photo-section .crown-callout-content {
+  text-align: left;
+}
+
+.crown-photo-section .section-title,
+.crown-photo-section p {
+  color: var(--cream);
+}
+
+.crown-photo-section .section-title {
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+/* ===== About: CTA ===== */
+.about-cta {
+  background-color: var(--sage-light);
+  text-align: center;
+  padding: 72px 0;
+}
+
+.about-cta .section-title {
+  margin-bottom: 24px;
+}
+
 /* ===== Footer ===== */
+.footer-logo {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
 .site-footer {
   background-color: var(--forest-green);
   color: var(--cream);
@@ -694,6 +1254,26 @@ img {
     font-size: 1.05rem;
   }
 
+  .hero-text-block {
+    padding: 28px 28px;
+  }
+
+  .about-hero,
+  .gear-hero,
+  .approach-hero,
+  .register-hero,
+  .faq-hero {
+    min-height: 360px;
+  }
+
+  .about-hero h1,
+  .gear-hero h1,
+  .approach-hero h1,
+  .register-hero h1,
+  .faq-hero h1 {
+    font-size: 2.8rem;
+  }
+
   /* Nav */
   .hamburger {
     display: flex;
@@ -744,9 +1324,17 @@ img {
     order: -1;
   }
 
-  /* Timeline */
-  .timeline {
+  .about-story-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-story-photo {
+    position: static;
+  }
+
+  .about-story-photo-img {
+    aspect-ratio: 4 / 3;
   }
 
   /* Teacher Cards */
@@ -755,9 +1343,22 @@ img {
     max-width: 400px;
   }
 
+  .about-teachers-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .about-teacher-photo {
+    aspect-ratio: 1 / 1;
+  }
+
   /* Belief Blocks */
   .belief-block {
     padding: 24px 20px;
+  }
+
+  .about-belief h3 {
+    font-size: 1.7rem;
   }
 
   .section {
@@ -1030,6 +1631,13 @@ img {
   }
 
   .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .gear-hero h1,
+  .approach-hero h1,
+  .register-hero h1,
+  .faq-hero h1 {
     font-size: 2.2rem;
   }
 
