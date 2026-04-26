@@ -616,6 +616,72 @@ img {
   line-height: 1.6;
 }
 
+/* ===== About: Teachers (redesign) ===== */
+.about-teachers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.about-teacher-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.about-teacher-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.about-teacher h3 {
+  font-size: 1.9rem;
+  margin-bottom: 2px;
+}
+
+.about-teacher-role {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--sage-text);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.about-teacher-creds {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(122,154,109,.25);
+}
+
+.about-teacher-creds li {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--warm-brown);
+  padding-left: 14px;
+  position: relative;
+}
+
+.about-teacher-creds li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--sage);
+}
+
 /* ===== About: What We Believe ===== */
 .belief-block {
   max-width: 800px;
@@ -992,6 +1058,15 @@ img {
   .teacher-cards {
     grid-template-columns: 1fr;
     max-width: 400px;
+  }
+
+  .about-teachers-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .about-teacher-photo {
+    aspect-ratio: 1 / 1;
   }
 
   /* Belief Blocks */
