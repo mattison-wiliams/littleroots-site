@@ -602,25 +602,46 @@ img {
   font-style: italic;
 }
 
-/* ===== Pricing Banner ===== */
-.pricing-banner {
-  background-color: var(--sage-light);
+/* ===== Founding Banner ===== */
+.founding-banner {
+  background-color: var(--forest-green);
+  color: var(--cream);
   text-align: center;
-  padding: 20px 16px;
-  border-bottom: 1px solid #dde8d8;
+  padding: 14px 5%;
+  font-size: .92rem;
 }
 
-.pricing-banner-text {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--warm-brown);
-  margin-bottom: 4px;
+.founding-banner strong {
+  color: #c8e6b8;
 }
 
-.pricing-banner-note {
-  font-size: 0.82rem;
-  color: var(--sage-text);
-  font-style: italic;
+.founding-banner a {
+  color: #c8e6b8;
+  text-decoration: underline;
+}
+
+/* ===== Pricing Block (What Is section) ===== */
+.pricing-block {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(122, 154, 109, .3);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: .95rem;
+}
+
+.price-amount {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--forest-green);
 }
 
 /* ===== Schedule Note ===== */
