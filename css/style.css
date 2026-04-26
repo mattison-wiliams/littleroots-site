@@ -446,6 +446,60 @@ img {
   margin: 0;
 }
 
+/* ===== Register: Hero ===== */
+.register-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+.register-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* hand and mossy stump sit center-right in the portrait frame */
+  object-position: 62% 45%;
+  z-index: 0;
+}
+
+.register-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,.08) 0%,
+    rgba(0,0,0,.02) 35%,
+    rgba(0,0,0,.55) 100%
+  );
+}
+
+.register-hero .container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.register-hero h1 {
+  color: var(--cream);
+  font-size: 4rem;
+  margin-bottom: 12px;
+}
+
+.register-hero .subtitle {
+  color: rgba(255,249,240,.88);
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 480px;
+  margin: 0;
+}
+
 /* ===== Sections ===== */
 .section {
   padding: 72px 0;
