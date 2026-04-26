@@ -241,15 +241,24 @@ img {
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 16px;
-  color: var(--cream);
+  color: var(--forest-green);
 }
 
 .hero .subtitle {
   font-size: 1.15rem;
   max-width: 520px;
   margin: 0 auto 32px;
-  color: rgba(255,249,240,.88);
+  color: var(--warm-brown);
   font-style: italic;
+}
+
+/* Photo hero (homepage) — light text over dark image */
+.hero--photo h1 {
+  color: var(--cream);
+}
+
+.hero--photo .subtitle {
+  color: rgba(255,249,240,.88);
 }
 
 .hero .summer-dates {
