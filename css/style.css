@@ -711,6 +711,38 @@ img {
   line-height: 1.7;
 }
 
+/* ===== About: What We Believe (redesign) ===== */
+.about-beliefs {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-belief {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(122,154,109,.18);
+}
+
+.about-belief:first-child {
+  padding-top: 0;
+}
+
+.about-belief:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.about-belief h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  line-height: 1.15;
+}
+
+.about-belief p {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  max-width: 62ch;
+}
+
 /* ===== Approach: Intro Text ===== */
 .approach-intro {
   max-width: 800px;
@@ -1072,6 +1104,10 @@ img {
   /* Belief Blocks */
   .belief-block {
     padding: 24px 20px;
+  }
+
+  .about-belief h3 {
+    font-size: 1.7rem;
   }
 
   .section {
