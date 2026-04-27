@@ -392,6 +392,141 @@ img {
   margin: 0;
 }
 
+/* ===== Gear Page: Quick-nav ===== */
+.gear-quicknav {
+  position: sticky;
+  top: 73px;
+  z-index: 90;
+  background-color: var(--cream);
+  border-bottom: 1px solid rgba(122,154,109,.2);
+}
+
+.gear-quicknav-inner {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gear-quicknav-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.gear-quicknav-inner a {
+  display: block;
+  padding: 13px 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--warm-brown);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.gear-quicknav-inner a:hover,
+.gear-quicknav-inner a.active {
+  color: var(--forest-green);
+  border-bottom-color: var(--forest-green);
+}
+
+/* ===== Gear Page: Partner Cards ===== */
+.gear-partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 720px;
+  margin-top: 32px;
+}
+
+.gear-partner-card {
+  background-color: var(--sage-light);
+  border: 1px solid rgba(122,154,109,.25);
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+
+.gear-partner-name {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--forest-green);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.gear-partner-card p {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--warm-brown);
+  margin-bottom: 12px;
+}
+
+.gear-partner-code {
+  display: inline-block;
+  background-color: var(--forest-green);
+  color: var(--cream);
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.gear-partner-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--forest-green);
+  text-decoration: underline;
+}
+
+/* ===== Gear Page: Section Headers ===== */
+.gear-section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.gear-section-label h2 {
+  font-size: 2.2rem;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.gear-section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: rgba(122,154,109,.3);
+}
+
+.gear-section-season {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--sage-text);
+  margin-bottom: 20px;
+}
+
+/* ===== Gear Page: Affiliate Note ===== */
+.gear-affiliate-note {
+  text-align: center;
+  padding: 20px 5%;
+  background-color: var(--sage-light);
+  border-top: 1px solid rgba(122,154,109,.2);
+}
+
+.gear-affiliate-note p {
+  font-size: 0.8rem;
+  color: var(--sage-text);
+  font-style: italic;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 /* ===== Approach: Hero ===== */
 .approach-hero {
   position: relative;
@@ -1266,6 +1401,14 @@ img {
 
   .gear-hero {
     min-height: 340px;
+  }
+
+  .gear-quicknav {
+    top: 65px;
+  }
+
+  .gear-partners {
+    grid-template-columns: 1fr;
   }
 
   .about-hero h1,
