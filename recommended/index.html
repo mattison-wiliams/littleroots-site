@@ -85,7 +85,7 @@
         <div class="gear-partner-card">
           <span class="gear-partner-name">OAKI</span>
           <p>Our go-to for rain suits, boots, and cold-weather gear. Little Roots families get <strong>25% off orders over $29.99</strong> plus free shipping over $100.</p>
-          <span class="gear-partner-code">LITTLEROOTS</span>
+          <a href="https://oaki.com/" target="_blank" rel="noopener noreferrer" class="gear-partner-code" id="oaki-code-btn">LITTLEROOTS</a>
         </div>
         <div class="gear-partner-card">
           <span class="gear-partner-name">Reima</span>
@@ -512,6 +512,22 @@
         }
       });
     });
+
+    // Oaki discount code: copy to clipboard and open site, then briefly show "COPIED!"
+    const oakiBtn = document.getElementById('oaki-code-btn');
+    if (oakiBtn) {
+      oakiBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText('LITTLEROOTS').then(function() {
+          oakiBtn.textContent = 'COPIED!';
+          setTimeout(function() { oakiBtn.textContent = 'LITTLEROOTS'; }, 2000);
+        }).catch(function() {
+          oakiBtn.textContent = 'COPIED!';
+          setTimeout(function() { oakiBtn.textContent = 'LITTLEROOTS'; }, 2000);
+        });
+        window.open('https://oaki.com/', '_blank', 'noopener,noreferrer');
+      });
+    }
 
     // Auto-open and scroll to a hashed FAQ item (e.g. /recommended/#the-backpack)
     if (window.location.hash) {
