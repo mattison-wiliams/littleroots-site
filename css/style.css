@@ -472,6 +472,22 @@ img {
   letter-spacing: 0.06em;
   padding: 4px 12px;
   border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.gear-partner-code:hover {
+  background-color: #234923;
+  color: var(--cream);
+}
+
+.gear-partner-code-hint {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--sage-text);
+  font-style: italic;
+  margin-top: 5px;
 }
 
 .gear-partner-link {
