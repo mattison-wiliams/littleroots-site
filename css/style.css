@@ -527,6 +527,55 @@ img {
   line-height: 1.6;
 }
 
+/* ===== Gear Page: Start Callout ===== */
+.gear-start-callout {
+  max-width: 800px;
+  margin: 32px auto 0;
+  background-color: var(--sage-light);
+  border: 2px solid rgba(46, 94, 46, .35);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.gear-start-callout-title {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--forest-green);
+  margin-bottom: 12px;
+}
+
+.gear-start-callout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gear-start-callout li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-left: 22px;
+  position: relative;
+  color: var(--warm-brown);
+}
+
+.gear-start-callout li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  color: var(--sage-text);
+  top: 2px;
+}
+
+.gear-start-callout a {
+  color: var(--forest-green);
+  font-weight: 600;
+  text-underline-offset: 2px;
+}
+
 /* ===== Approach: Hero ===== */
 .approach-hero {
   position: relative;
@@ -1409,6 +1458,10 @@ img {
 
   .gear-partners {
     grid-template-columns: 1fr;
+  }
+
+  .gear-start-callout {
+    padding: 20px;
   }
 
   .about-hero h1,
