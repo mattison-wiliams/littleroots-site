@@ -434,9 +434,8 @@ img {
 /* ===== Gear Page: Partner Cards ===== */
 .gear-partners {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  max-width: 720px;
   margin-top: 32px;
 }
 
@@ -473,6 +472,22 @@ img {
   letter-spacing: 0.06em;
   padding: 4px 12px;
   border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.gear-partner-code:hover {
+  background-color: #234923;
+  color: var(--cream);
+}
+
+.gear-partner-code-hint {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--sage-text);
+  font-style: italic;
+  margin-top: 5px;
 }
 
 .gear-partner-link {
@@ -525,6 +540,55 @@ img {
   max-width: 560px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* ===== Gear Page: Start Callout ===== */
+.gear-start-callout {
+  max-width: 800px;
+  margin: 32px auto 0;
+  background-color: var(--sage-light);
+  border: 2px solid rgba(46, 94, 46, .35);
+  border-radius: 12px;
+  padding: 24px 28px;
+}
+
+.gear-start-callout-title {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--forest-green);
+  margin-bottom: 12px;
+}
+
+.gear-start-callout ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gear-start-callout li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding-left: 22px;
+  position: relative;
+  color: var(--warm-brown);
+}
+
+.gear-start-callout li::before {
+  content: '\2192';
+  position: absolute;
+  left: 0;
+  color: var(--sage-text);
+  top: 2px;
+}
+
+.gear-start-callout a {
+  color: var(--forest-green);
+  font-weight: 600;
+  text-underline-offset: 2px;
 }
 
 /* ===== Approach: Hero ===== */
@@ -1409,6 +1473,10 @@ img {
 
   .gear-partners {
     grid-template-columns: 1fr;
+  }
+
+  .gear-start-callout {
+    padding: 20px;
   }
 
   .about-hero h1,
