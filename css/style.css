@@ -1863,6 +1863,23 @@ img {
   margin: 0;
 }
 
+.register-perk-note {
+  border-left: 3px solid var(--sage);
+  padding: 4px 14px;
+  margin: -4px 0 24px;
+}
+
+.register-perk-note p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--sage-text);
+  margin: 0;
+}
+
+.register-perk-note a {
+  color: var(--forest-green);
+}
+
 .register-spots {
   font-size: 0.9rem;
   font-style: italic;
