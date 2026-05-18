@@ -1270,21 +1270,6 @@ img {
     linear-gradient(180deg, var(--sage-light) 0%, var(--cream) 100%);
 }
 
-.crown-text {
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.crown-text p {
-  margin-bottom: 16px;
-  font-size: 0.95rem;
-}
-
-.crown-text p:last-child {
-  margin-bottom: 0;
-}
-
 /* ===== Summer Details (Hero) ===== */
 .summer-details {
   max-width: 480px;
