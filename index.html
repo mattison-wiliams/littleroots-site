@@ -53,7 +53,12 @@
 
   <!-- Hero -->
   <section class="hero hero--photo">
-    <img src="images/Hero.jpg" alt="Parent and toddler sitting on a mossy log beneath tall trees, looking up at the forest canopy" class="hero-img">
+    <picture>
+      <source media="(max-width: 700px)" type="image/webp" srcset="images/Hero-sm.webp">
+      <source media="(max-width: 700px)" type="image/jpeg" srcset="images/Hero-sm.jpg">
+      <source type="image/webp" srcset="images/Hero.webp">
+      <img src="images/Hero.jpg" alt="Parent and toddler sitting on a mossy log beneath tall trees, looking up at the forest canopy" class="hero-img" width="1600" height="2000" fetchpriority="high">
+    </picture>
     <div class="hero-overlay"></div>
     <div class="container">
       <div class="hero-text-block">
