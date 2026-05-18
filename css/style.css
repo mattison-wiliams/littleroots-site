@@ -286,18 +286,35 @@ img {
   margin-bottom: 0;
 }
 
-.hero-spots-left {
+.btn-hero {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 32px 12px;
+  line-height: 1.2;
+}
+
+.btn-hero .btn-label {
+  font-size: 1rem;
+}
+
+.btn-hero .btn-urgency {
   display: inline-block;
   background-color: var(--rust);
   color: var(--cream);
   font-family: 'Caveat', cursive;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  padding: 6px 22px;
+  padding: 2px 14px;
   border-radius: 999px;
-  margin: 0 0 18px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-hero:hover .btn-urgency {
+  background-color: var(--cream);
+  color: var(--rust);
 }
 
 /* ===== About: Hero ===== */
