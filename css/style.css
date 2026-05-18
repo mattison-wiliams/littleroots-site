@@ -1529,6 +1529,17 @@ img {
     top: 65px;
   }
 
+  .gear-quicknav-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+  }
+
+  .gear-quicknav-inner a {
+    padding: 10px 14px;
+    font-size: 0.78rem;
+  }
+
   .gear-partners {
     grid-template-columns: 1fr;
   }
