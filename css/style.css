@@ -1592,6 +1592,26 @@ img {
     display: flex;
   }
 
+  /* Wordmark: Lora is wider than the old Caveat, so the single-line
+     desktop wordmark no longer fits on narrow screens. Stack it into a
+     clean two-line lockup — icon floated left, "Forest School" dropping
+     to its own line — instead of the broken two-column wrap. */
+  .logo {
+    display: block;
+    overflow: hidden; /* contain the floated icon */
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .logo-img {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .logo span {
+    display: block;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
