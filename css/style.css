@@ -1599,6 +1599,7 @@ img {
   .logo {
     display: block;
     overflow: hidden; /* contain the floated icon */
+    white-space: nowrap; /* keep each wordmark line intact */
     font-size: 1.35rem;
     line-height: 1.2;
   }
