@@ -266,7 +266,10 @@ img {
 }
 
 .hero .summer-info {
-  color: rgba(255,249,240,.85);
+  color: rgba(255,249,240,.95);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .hero .container {
