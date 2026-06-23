@@ -289,35 +289,17 @@ img {
   margin-bottom: 0;
 }
 
-.btn-hero {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  padding: 14px 32px 12px;
-  line-height: 1.2;
-}
-
-.btn-hero .btn-label {
-  font-size: 1rem;
-}
-
-.btn-hero .btn-urgency {
-  display: inline-block;
-  background-color: var(--rust);
-  color: var(--cream);
-  font-family: 'Caveat', cursive;
-  font-size: 1.1rem;
+.btn-rust {
+  background-color: #9C4E30;
+  font-size: 1.15rem;
   font-weight: 700;
-  padding: 2px 14px;
-  border-radius: 999px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  padding: 16px 44px;
+  box-shadow: 0 3px 12px rgba(156, 78, 48, 0.35);
 }
 
-.btn-hero:hover .btn-urgency {
-  background-color: var(--cream);
-  color: var(--rust);
+.btn-rust:hover {
+  background-color: #7D3E26;
+  box-shadow: 0 4px 16px rgba(125, 62, 38, 0.4);
 }
 
 /* ===== About: Hero ===== */
