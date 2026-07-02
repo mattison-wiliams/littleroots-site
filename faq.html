@@ -162,21 +162,14 @@
         <details class="faq-item">
           <summary class="faq-question">What&rsquo;s the registration fee?</summary>
           <div class="faq-answer">
-            <p>The registration fee is a one-time $49 fee per family that covers supplies and administrative costs. It&rsquo;s non-refundable, but you only pay it once - returning families don&rsquo;t pay it again. <a href="faq.html#founding-families">Founding Families</a> pay no registration fee.</p>
+            <p>The registration fee is a one-time $49 fee per family that covers supplies and administrative costs. It&rsquo;s non-refundable, but you only pay it once - returning families don&rsquo;t pay it again.</p>
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">How much does it cost?</summary>
           <div class="faq-answer">
-            <p>$99 per month, plus a one-time $49 registration fee. <a href="faq.html#founding-families">Founding Families</a> pay no registration fee. Payment is processed securely through Stripe.</p>
-          </div>
-        </details>
-
-        <details class="faq-item" id="founding-families">
-          <summary class="faq-question">What is the Founding Families perk?</summary>
-          <div class="faq-answer">
-            <p>Every family who enrolls in our June 2026 session is a Founding Family - and Founding Families pay no registration fee. It&rsquo;s our way of saying thank you to the families who believe in Little Roots from the very beginning. Follow us on <a href="https://www.instagram.com/littleroots.school?igsh=dWMxcGVlbmdjeDEy&amp;utm_source=qr" target="_blank" rel="noopener">Instagram @littleroots.school <span class="sr-only">(opens in new tab)</span></a> to be the first to know when registration opens.</p>
+            <p>$99 per month, plus a one-time $49 registration fee. Payment is processed securely through Stripe.</p>
           </div>
         </details>
 
@@ -317,7 +310,7 @@
       });
     });
 
-    // Auto-open and scroll to a hashed FAQ item (e.g. /faq#founding-families)
+    // Auto-open and scroll to a hashed FAQ item (e.g. /faq#some-question)
     if (window.location.hash) {
       const target = document.querySelector(window.location.hash);
       if (target && target.classList.contains('faq-item')) {

@@ -1319,24 +1319,6 @@ img {
   font-style: italic;
 }
 
-/* ===== Founding Banner ===== */
-.founding-banner {
-  background-color: var(--forest-green);
-  color: var(--cream);
-  text-align: center;
-  padding: 14px 5%;
-  font-size: .92rem;
-}
-
-.founding-banner strong {
-  color: #c8e6b8;
-}
-
-.founding-banner a {
-  color: #c8e6b8;
-  text-decoration: underline;
-}
-
 /* ===== Pricing Block (What Is section) ===== */
 .pricing-block {
   margin-top: 24px;
@@ -1880,20 +1862,6 @@ img {
 /* ===== Register Page ===== */
 .register-content {
   max-width: 800px;
-}
-
-.founding-callout {
-  background-color: var(--sage-light);
-  border-left: 4px solid var(--sage);
-  border-radius: 8px;
-  padding: 20px 24px;
-  margin-bottom: 20px;
-}
-
-.founding-callout p {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  margin: 0;
 }
 
 .register-perk-note {
