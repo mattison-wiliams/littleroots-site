@@ -889,6 +889,37 @@ img {
   line-height: 1.4;
 }
 
+/* ===== Testimonial ===== */
+.testimonial-section {
+  padding: 56px 0;
+}
+
+.testimonial {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--sage-light);
+  border-radius: 16px;
+  padding: 48px 40px;
+}
+
+.testimonial-quote {
+  font-family: 'Lora', Georgia, serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  color: var(--forest-green);
+  margin: 0;
+}
+
+.testimonial-attribution {
+  display: block;
+  margin-top: 20px;
+  font-style: normal;
+  font-size: 0.95rem;
+  color: var(--sage-text);
+}
+
 /* Photo placeholder */
 .photo-placeholder {
   background-color: var(--sage);
