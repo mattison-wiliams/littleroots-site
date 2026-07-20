@@ -889,6 +889,19 @@ img {
   line-height: 1.4;
 }
 
+.pullquote-cite {
+  display: block;
+  margin-top: 6px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-style: normal;
+  color: var(--sage);
+}
+
+.pullquote-cite::before {
+  content: '\2014 ';
+}
+
 /* ===== Testimonial ===== */
 .testimonial-section {
   padding: 56px 0;
