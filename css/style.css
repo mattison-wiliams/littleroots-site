@@ -272,6 +272,11 @@ img {
   line-height: 1.4;
 }
 
+.hero .summer-note {
+  color: rgba(255,249,240,.92);
+  margin-top: 8px;
+}
+
 .hero .container {
   position: relative;
   z-index: 2;
