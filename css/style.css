@@ -633,6 +633,19 @@ img {
   text-underline-offset: 2px;
 }
 
+/* Gear Page: "What my daughter wears" outfit box */
+.gear-outfit-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+}
+
+@media (max-width: 640px) {
+  .gear-outfit-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ===== Gear Page: Packing Checklist ===== */
 .gear-checklist {
   max-width: 800px;
