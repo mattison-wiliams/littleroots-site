@@ -55,11 +55,14 @@
 
   <!-- Hero -->
   <section class="about-hero">
-    <img
-      src="images/Hero our story page.jpg"
-      alt="A forest trail with dappled light filtering through tall trees in the Pacific Northwest"
-      class="about-hero-img"
-    >
+    <picture>
+      <source media="(max-width: 700px)" srcset="images/about-hero-sm.jpg">
+      <img
+        src="images/about-hero.jpg"
+        alt="A forest trail with dappled light filtering through tall trees in the Pacific Northwest"
+        class="about-hero-img"
+      >
+    </picture>
     <div class="about-hero-overlay"></div>
     <div class="container">
       <h1>Our Story</h1>
@@ -74,7 +77,7 @@
 
         <div class="about-story-photo">
           <img
-            src="images/IMG_6685.jpeg"
+            src="images/about-story.jpg"
             alt="Mattison and her daughter sitting on a mossy log, exploring a fern in the forest"
             class="about-story-photo-img"
             loading="lazy"
