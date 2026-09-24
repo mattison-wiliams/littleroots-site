@@ -652,6 +652,16 @@ img {
   }
 }
 
+/* Gear Page: photo inside a dropdown section */
+.gear-inline-photo {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 8px auto 24px;
+  border-radius: 16px;
+}
+
 /* ===== Gear Page: Packing Checklist ===== */
 .gear-checklist {
   max-width: 800px;
