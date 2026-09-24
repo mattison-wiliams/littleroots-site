@@ -553,6 +553,12 @@ img {
   white-space: nowrap;
 }
 
+@media (max-width: 640px) {
+  .gear-section-label h2 {
+    white-space: normal;
+  }
+}
+
 .gear-section-label::after {
   content: '';
   flex: 1;
