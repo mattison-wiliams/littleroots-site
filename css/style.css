@@ -1325,6 +1325,33 @@ img {
   border-radius: 12px;
 }
 
+.belief-photo-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.belief-photo-row figure {
+  margin: 0;
+}
+
+.belief-photo-row img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.belief-photo-row figcaption {
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--sage-text);
+}
+
 .belief-block:last-child {
   margin-bottom: 0;
 }
