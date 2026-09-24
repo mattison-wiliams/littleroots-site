@@ -17,6 +17,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 - Pricing is $99 a month. The only term pass offered right now is Winter (December 2, 2026 to February 24, 2027): $229, nonrefundable, sibling $109. Siblings are otherwise $49 a month. Spring, Summer, and Fall passes ($269, sibling $129) are planned but not shown on the site yet. There is no longer any bundle.
 - Refer to the owner's child as "my daughter" on the site, not by name.
 - Parent testimonials are quoted word for word. Do not edit or flag their wording.
+- The header name is "Little Roots School" on purpose, ahead of a planned preschool rebrand. Do not flag it as inconsistent with "Little Roots Forest School" elsewhere.
 
 ## Photos
 
