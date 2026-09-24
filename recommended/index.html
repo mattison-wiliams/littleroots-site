@@ -99,13 +99,14 @@
       <div class="gear-partners">
         <div class="gear-partner-card">
           <span class="gear-partner-name">iksplor</span>
-          <p>100% ZQ certified merino wool, sister-owned out of Jackson Hole, Wyoming. Our pick for base layers and mid-layers that hold up across seasons. Start with their toddler base layer sets, they&rsquo;re what my daughter lives in year round.</p>
-          <a href="https://alnk.to/aWHnj1K" target="_blank" rel="noopener noreferrer" class="gear-partner-link">Shop toddler base layers &rarr;</a>
+          <p>100% ZQ certified merino wool, sister-owned out of Jackson Hole, Wyoming. Our pick for base layers and mid-layers that hold up across seasons. Start with their toddler base layer sets, they&rsquo;re what my daughter lives in year round. Little Roots families get <strong>20% off</strong> with code LITTLEROOTS.</p>
+          <a href="https://alnk.to/aWHnj1K" target="_blank" rel="noopener noreferrer" class="gear-partner-code">LITTLEROOTS</a>
+          <span class="gear-partner-code-hint">tap to copy and shop</span>
         </div>
         <div class="gear-partner-card">
           <span class="gear-partner-name">OAKI</span>
           <p>Our go-to for rain suits, boots, and cold-weather gear. Little Roots families get <strong>25% off orders over $29.99</strong> plus free shipping over $100.</p>
-          <a href="https://oaki.com/" target="_blank" rel="noopener noreferrer" class="gear-partner-code" id="oaki-code-btn">LITTLEROOTS</a>
+          <a href="https://oaki.com/" target="_blank" rel="noopener noreferrer" class="gear-partner-code">LITTLEROOTS</a>
           <span class="gear-partner-code-hint">tap to copy and shop</span>
         </div>
         <div class="gear-partner-card">
@@ -626,21 +627,19 @@
       });
     });
 
-    // Oaki discount code: copy to clipboard and open site, then briefly show "COPIED!"
-    const oakiBtn = document.getElementById('oaki-code-btn');
-    if (oakiBtn) {
-      oakiBtn.addEventListener('click', function(e) {
+    // Partner discount codes: copy to clipboard and open the shop, then briefly show "COPIED!"
+    document.querySelectorAll('.gear-partner-code').forEach(function(codeBtn) {
+      const code = codeBtn.textContent;
+      codeBtn.addEventListener('click', function(e) {
         e.preventDefault();
-        navigator.clipboard.writeText('LITTLEROOTS').then(function() {
-          oakiBtn.textContent = 'COPIED!';
-          setTimeout(function() { oakiBtn.textContent = 'LITTLEROOTS'; }, 2000);
-        }).catch(function() {
-          oakiBtn.textContent = 'COPIED!';
-          setTimeout(function() { oakiBtn.textContent = 'LITTLEROOTS'; }, 2000);
-        });
-        window.open('https://oaki.com/', '_blank', 'noopener,noreferrer');
+        const showCopied = function() {
+          codeBtn.textContent = 'COPIED!';
+          setTimeout(function() { codeBtn.textContent = code; }, 2000);
+        };
+        navigator.clipboard.writeText(code).then(showCopied).catch(showCopied);
+        window.open(codeBtn.href, '_blank', 'noopener,noreferrer');
       });
-    }
+    });
 
     // Auto-open and scroll to a hashed FAQ item (e.g. /recommended/#the-backpack)
     if (window.location.hash) {
