@@ -652,8 +652,9 @@ img {
   }
 }
 
-/* Gear Page: photo inside a dropdown section */
-.gear-inline-photo {
+/* Photo inside a dropdown section (Gear page and FAQ) */
+.gear-inline-photo,
+.faq-photo {
   display: block;
   width: 100%;
   max-width: 360px;
