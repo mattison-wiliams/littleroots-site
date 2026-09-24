@@ -1701,6 +1701,21 @@ img {
     min-height: 360px;
   }
 
+  /* darker bottom on phones so the title stays readable over the bubbles */
+  .register-hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,.15) 0%,
+      rgba(0,0,0,.35) 35%,
+      rgba(0,0,0,.72) 100%
+    );
+  }
+
+  .register-hero h1,
+  .register-hero .subtitle {
+    text-shadow: 0 2px 8px rgba(0,0,0,.45);
+  }
+
   .gear-hero {
     min-height: 340px;
   }
@@ -1895,6 +1910,15 @@ img {
 .recommended-intro {
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* new family checklist sits first on the gear page, above the intro */
+.gear-start-callout:first-child {
+  margin-top: 0;
+}
+
+.gear-start-callout + .recommended-intro {
+  margin-top: 32px;
 }
 
 .recommended-intro p {
