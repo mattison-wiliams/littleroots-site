@@ -14,7 +14,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
   - Exceptions the owner chose to keep: the class time "9:30–11:00 AM" in the footer, and product names that include a dash on the Recommended Gear page.
 - Use "a month" for prices (for example "$99 a month"), not "/month" or "per month".
 - Ages are written "ages 1 to 3".
-- Only the School Year Bundle ($799, September to May) is offered. There is no Full Year Bundle.
+- Pricing is $99 a month, or a term pass for $259 (nonrefundable). Terms: September to November, December to February, March to May, June to August. There is no longer any bundle.
 - Refer to the owner's child as "my daughter" on the site, not by name.
 
 ## Photos
