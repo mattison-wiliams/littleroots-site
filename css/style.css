@@ -959,6 +959,19 @@ img {
   color: var(--sage-text);
 }
 
+/* Parent quotes placed inside another section */
+.testimonial--inline {
+  margin: 48px auto 0;
+}
+
+.faq-list .testimonial--inline {
+  margin: 32px auto;
+}
+
+.section--alt .testimonial--inline {
+  background-color: white;
+}
+
 /* Photo placeholder */
 .photo-placeholder {
   background-color: var(--sage);
