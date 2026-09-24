@@ -633,6 +633,20 @@ img {
   top: 2px;
 }
 
+/* new family list is a packing checklist, so show empty checkboxes instead of arrows */
+.gear-new-family li {
+  padding-left: 26px;
+}
+
+.gear-new-family li::before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  top: 5px;
+  border: 2px solid var(--sage-text);
+  border-radius: 3px;
+}
+
 .gear-start-callout a {
   color: var(--forest-green);
   font-weight: 600;
@@ -1720,6 +1734,21 @@ img {
     min-height: 340px;
   }
 
+  /* darker bottom on phones so the italic line stays readable over the trail */
+  .gear-hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,.12) 0%,
+      rgba(0,0,0,.3) 35%,
+      rgba(0,0,0,.72) 100%
+    );
+  }
+
+  .gear-hero h1,
+  .gear-hero .subtitle {
+    text-shadow: 0 2px 8px rgba(0,0,0,.45);
+  }
+
   .gear-quicknav {
     top: 65px;
   }
@@ -1919,6 +1948,7 @@ img {
 
 .gear-start-callout + .recommended-intro {
   margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .gear-start-callout ul + p {
