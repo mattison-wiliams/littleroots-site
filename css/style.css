@@ -1921,6 +1921,10 @@ img {
   margin-top: 32px;
 }
 
+.gear-start-callout ul + p {
+  margin-top: 18px;
+}
+
 .recommended-intro p {
   font-size: 0.95rem;
   line-height: 1.7;
