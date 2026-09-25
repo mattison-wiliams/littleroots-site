@@ -2253,14 +2253,14 @@ img {
 }
 
 .register-form-area {
-  margin-bottom: 8px;
+  margin: 8px 0 40px;
+  text-align: center;
 }
 
-.register-form-area iframe {
-  width: 100%;
-  height: 1200px;
-  border: none;
-  display: block;
+.register-form-note {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--sage-text);
 }
 
 .register-payment {
