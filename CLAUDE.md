@@ -12,6 +12,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 
 - Do not use dashes (-, –, —) or semicolons in visible text. Use commas, colons, periods, or "to" for ranges.
   - Exceptions the owner chose to keep: the class time "9:30–11:00 AM" in the footer, and product names that include a dash on the Recommended Gear page.
+- Words for the adult who comes to class: use "you" when talking to the parent reading the page, "parent or caregiver" for rules (like who has to stay), and "parents and caregivers" in search and link preview descriptions. "Grown-ups" (with the hyphen) is allowed in playful spots, like the question of the day.
 - Use "a month" for prices (for example "$99 a month"), not "/month" or "per month".
 - Ages are written "ages 1 to 3".
 - Pricing is $99 a month. The only term pass offered right now is Winter (December 2, 2026 to February 24, 2027): $229, nonrefundable, sibling $109. Siblings are otherwise $49 a month. Spring, Summer, and Fall passes are $269 (sibling $129). Their dates and prices are listed on the Register page for planning, but only the Winter pass has a payment button for now. There is no longer any bundle.
