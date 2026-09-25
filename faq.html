@@ -70,6 +70,17 @@
     </div>
   </section>
 
+  <nav class="quicknav" aria-label="Jump to section">
+    <div class="container quicknav-inner">
+      <a href="#faq-class">The Class</a>
+      <a href="#faq-cost">Cost</a>
+      <a href="#faq-weather">Weather</a>
+      <a href="#faq-bring">What to Bring</a>
+      <a href="#faq-family">Family</a>
+      <a href="#faq-safety">Safety</a>
+    </div>
+  </nav>
+
   <section class="section">
     <div class="container">
       <p class="faq-intro">Want the full details? Read our <a href="/Little-Roots-Family-Handbook.pdf" target="_blank">Family Handbook<span class="sr-only"> (opens in new tab)</span></a> or see every class date on our <a href="/Little-Roots-Calendar-2026-2027.pdf" target="_blank">2026 to 2027 calendar<span class="sr-only"> (opens in new tab)</span></a>.</p>
@@ -79,14 +90,6 @@
         <input type="search" id="faq-search-input" class="faq-search-input" placeholder="Search questions, like rain, snack, or siblings" autocomplete="off">
         <p class="faq-search-status" aria-live="polite"></p>
       </div>
-      <nav class="faq-jump" aria-label="FAQ topics">
-        <a href="#faq-class">About the class</a>
-        <a href="#faq-cost">Cost and enrolling</a>
-        <a href="#faq-weather">Weather</a>
-        <a href="#faq-bring">What to bring</a>
-        <a href="#faq-family">Siblings and family</a>
-        <a href="#faq-safety">Health and safety</a>
-      </nav>
       <div class="faq-list">
 
         <div class="faq-group" id="faq-class">
@@ -482,7 +485,7 @@
     const noResults = document.querySelector('.faq-no-results');
     const searchStatus = document.querySelector('.faq-search-status');
     const faqTestimonial = document.querySelector('.faq-list .testimonial--inline');
-    const faqJump = document.querySelector('.faq-jump');
+    const faqJump = document.querySelector('.quicknav');
     const startsOpen = Array.from(faqItems).map(item => item.open);
 
     function setOpen(item, open) {

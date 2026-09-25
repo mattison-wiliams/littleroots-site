@@ -465,27 +465,27 @@ img {
   margin: 0;
 }
 
-/* ===== Gear Page: Quick-nav ===== */
-.gear-quicknav {
+/* ===== Jump bar under the hero (Stations, FAQ, Gear) ===== */
+.quicknav {
   position: sticky;
-  top: 73px;
+  top: 84px; /* right under the header */
   z-index: 90;
   background-color: var(--cream);
   border-bottom: 1px solid rgba(122,154,109,.2);
 }
 
-.gear-quicknav-inner {
+.quicknav-inner {
   display: flex;
   overflow-x: auto;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
 }
 
-.gear-quicknav-inner::-webkit-scrollbar {
+.quicknav-inner::-webkit-scrollbar {
   display: none;
 }
 
-.gear-quicknav-inner a {
+.quicknav-inner a {
   display: block;
   padding: 13px 20px;
   font-size: 0.82rem;
@@ -498,8 +498,8 @@ img {
   transition: color 0.2s, border-color 0.2s;
 }
 
-.gear-quicknav-inner a:hover,
-.gear-quicknav-inner a.active {
+.quicknav-inner a:hover,
+.quicknav-inner a.active {
   color: var(--forest-green);
   border-bottom-color: var(--forest-green);
 }
@@ -1207,34 +1207,6 @@ img {
   margin-bottom: 8px;
 }
 
-/* topic links under the FAQ search box */
-.faq-jump {
-  max-width: 800px;
-  margin: 0 auto 36px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.faq-jump a {
-  padding: 8px 16px;
-  border: 1px solid var(--sage);
-  border-radius: 30px;
-  color: var(--forest-green);
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.faq-jump a:hover {
-  background-color: var(--sage-light);
-}
-
-.faq-jump[hidden] {
-  display: none;
-}
-
 .faq-question {
   display: flex;
   align-items: center;
@@ -1894,17 +1866,16 @@ img {
     text-shadow: 0 2px 8px rgba(0,0,0,.45);
   }
 
-  .gear-quicknav {
-    top: 65px;
+  /* one swipeable row on phones, with a soft fade on the right edge
+     so it's clear there are more links */
+  .quicknav-inner {
+    width: 100%;
+    padding: 0 12px;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+    mask-image: linear-gradient(to right, #000 85%, transparent);
   }
 
-  .gear-quicknav-inner {
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-x: visible;
-  }
-
-  .gear-quicknav-inner a {
+  .quicknav-inner a {
     padding: 10px 14px;
     font-size: 0.78rem;
   }
@@ -2737,5 +2708,30 @@ img {
 
   .hamburger.active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* leave room for the header plus the jump bar when jumping to a section */
+html:has(.quicknav) {
+  scroll-padding-top: 150px;
+}
+
+.quicknav[hidden] {
+  display: none;
+}
+
+/* center the jump links, but still let them scroll if they don't fit */
+.quicknav-inner a:first-child {
+  margin-left: auto;
+}
+
+.quicknav-inner a:last-child {
+  margin-right: auto;
+}
+
+/* tablets: slightly tighter jump links so they fit on one line */
+@media (min-width: 769px) and (max-width: 1000px) {
+  .quicknav-inner a {
+    padding: 13px 16px;
   }
 }
