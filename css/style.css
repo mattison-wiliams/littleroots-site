@@ -1151,6 +1151,14 @@ img {
   margin: 0 auto;
 }
 
+.faq-intro {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  text-align: center;
+  font-size: .95rem;
+  color: var(--sage-text);
+}
+
 .faq-item {
   border-bottom: 1px solid rgba(122, 154, 109, 0.2);
 }
