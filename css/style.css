@@ -2493,3 +2493,8 @@ img {
   opacity: 1;
   background-color: #244a24;
 }
+
+.term-calendar-link {
+  margin-top: 14px;
+  font-size: 0.95rem;
+}
