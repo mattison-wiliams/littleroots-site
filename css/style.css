@@ -1711,6 +1711,19 @@ img {
   margin-bottom: 24px;
 }
 
+.btn-outline {
+  background-color: transparent;
+  color: var(--forest-green);
+  border: 2px solid var(--forest-green);
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background-color: var(--forest-green);
+  color: var(--cream);
+  box-shadow: none;
+}
+
 /* ===== Footer ===== */
 .footer-logo {
   width: 110px;
