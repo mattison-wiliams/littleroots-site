@@ -1721,6 +1721,42 @@ img {
     padding: 28px 28px;
   }
 
+  /* homepage photo hero on phones: text up top, button at the bottom,
+     so the parent and toddler on the log stay visible in between */
+  .hero--photo {
+    padding: 20px 0 28px;
+  }
+
+  .hero--photo .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 600px;
+  }
+
+  .hero--photo .hero-img {
+    object-position: center bottom;
+  }
+
+  .hero--photo h1 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+  }
+
+  .hero--photo .subtitle {
+    margin-bottom: 14px;
+  }
+
+  .hero--photo .summer-info {
+    font-size: 1.1rem;
+  }
+
+  .hero--photo .hero-text-block {
+    padding: 20px 20px;
+    margin-bottom: 0;
+  }
+
   .about-hero,
   .approach-hero,
   .register-hero,
