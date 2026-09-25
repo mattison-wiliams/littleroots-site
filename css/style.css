@@ -2525,6 +2525,17 @@ img {
   text-align: center;
 }
 
+.faq-ask {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.faq-ask a {
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
 /* ===== Back to Top ===== */
 .back-to-top {
   position: fixed;
