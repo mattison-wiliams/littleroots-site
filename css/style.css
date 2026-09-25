@@ -2460,3 +2460,36 @@ img {
   padding: 24px 4px;
   text-align: center;
 }
+
+/* ===== Back to Top ===== */
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 80;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--forest-green);
+  color: var(--cream);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
+}
+
+.back-to-top.visible {
+  opacity: 0.92;
+  visibility: visible;
+  transform: none;
+}
+
+.back-to-top:hover,
+.back-to-top:focus-visible {
+  opacity: 1;
+  background-color: #244a24;
+}
