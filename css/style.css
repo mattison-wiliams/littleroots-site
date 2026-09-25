@@ -1866,13 +1866,11 @@ img {
     text-shadow: 0 2px 8px rgba(0,0,0,.45);
   }
 
-  /* one swipeable row on phones, with a soft fade on the right edge
-     so it's clear there are more links */
+  /* stack the links onto a second line on phones so they all show */
   .quicknav-inner {
-    width: 100%;
-    padding: 0 12px;
-    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
-    mask-image: linear-gradient(to right, #000 85%, transparent);
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
   }
 
   .quicknav-inner a {
@@ -2733,5 +2731,19 @@ html:has(.quicknav) {
 @media (min-width: 769px) and (max-width: 1000px) {
   .quicknav-inner a {
     padding: 13px 16px;
+  }
+}
+
+/* phones: the jump links stack onto two lines, so center every line
+   and leave a little more room when jumping to a section */
+@media (max-width: 768px) {
+  .quicknav-inner a:first-child,
+  .quicknav-inner a:last-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  html:has(.quicknav) {
+    scroll-padding-top: 185px;
   }
 }
