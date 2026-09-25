@@ -20,6 +20,11 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 - Parent testimonials are quoted word for word. Do not edit or flag their wording.
 - The header name is "Little Roots School" on purpose, ahead of a planned preschool rebrand. Do not flag it as inconsistent with "Little Roots Forest School" elsewhere.
 
+## Homepage hero line
+
+- The line under "Kids being kids in the forest." changes each season. It pairs one real moment from the trail with one real messy moment from the stations, taken from that season's lesson plans. Avoid lists of three.
+- Current (fall 2026): turning over logs to see who lives underneath, and leaf soup in the mud kitchen. Swap for winter when the Winter term starts December 2.
+
 ## Photos
 
 - Always strip hidden photo data (location, date, phone model) before adding a photo to the site.
