@@ -19,6 +19,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* keep jump links from landing under the sticky header */
+  scroll-padding-top: 90px;
 }
 
 body {
