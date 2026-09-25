@@ -1701,6 +1701,21 @@ img {
 }
 
 /* ===== About: CTA ===== */
+/* Katelyn's own words under her credentials */
+.about-teacher-quote {
+  margin-top: 20px;
+  padding: 4px 0 4px 18px;
+  border-left: 3px solid var(--sage);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--forest-green);
+}
+
+.about-teacher-quote p + p {
+  margin-top: 10px;
+}
+
 .about-cta {
   background-color: var(--sage-light);
   text-align: center;
