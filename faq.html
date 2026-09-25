@@ -72,6 +72,11 @@
   <section class="section">
     <div class="container">
       <p class="faq-intro">Want the full details? Read our <a href="/Little-Roots-Family-Handbook.pdf" target="_blank">Family Handbook<span class="sr-only"> (opens in new tab)</span></a>.</p>
+      <div class="faq-search">
+        <label for="faq-search-input" class="sr-only">Search the FAQ</label>
+        <input type="search" id="faq-search-input" class="faq-search-input" placeholder="Search questions, like rain, snack, or siblings" autocomplete="off">
+        <p class="faq-search-status" aria-live="polite"></p>
+      </div>
       <div class="faq-list">
 
         <details class="faq-item" open>
@@ -317,6 +322,8 @@
           </div>
         </details>
 
+        <p class="faq-no-results" hidden>No matches for that one. Try another word, or email me at <a href="mailto:hello@littleroots.school">hello@littleroots.school</a> and I&rsquo;ll be happy to help.</p>
+
         <blockquote class="testimonial testimonial--inline">
           <p class="testimonial-quote">&ldquo;We love Little Roots! We have loved spending time outdoors rain or shine and all the activities.&rdquo;</p>
           <footer class="testimonial-attribution">Kyleigh, Little Roots parent</footer>
@@ -400,6 +407,44 @@
           });
         }
       });
+    });
+
+    // FAQ search: show only matching questions and open them
+    const searchInput = document.getElementById('faq-search-input');
+    const faqItems = document.querySelectorAll('.faq-item');
+    const noResults = document.querySelector('.faq-no-results');
+    const searchStatus = document.querySelector('.faq-search-status');
+    const faqTestimonial = document.querySelector('.faq-list .testimonial--inline');
+    const startsOpen = Array.from(faqItems).map(item => item.open);
+
+    function setOpen(item, open) {
+      const answer = item.querySelector('.faq-answer');
+      item.open = open;
+      answer.style.maxHeight = open ? 'none' : '';
+      answer.style.opacity = open ? '1' : '';
+      answer.style.paddingBottom = open ? '20px' : '';
+    }
+
+    searchInput.addEventListener('input', () => {
+      const words = searchInput.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      let matches = 0;
+      faqItems.forEach((item, i) => {
+        if (!words.length) {
+          item.hidden = false;
+          setOpen(item, startsOpen[i]);
+          return;
+        }
+        const text = item.textContent.toLowerCase().replace(/[\u2018\u2019]/g, "'");
+        const found = words.every(w => text.includes(w.replace(/[\u2018\u2019]/g, "'")));
+        item.hidden = !found;
+        setOpen(item, found);
+        if (found) matches++;
+      });
+      noResults.hidden = !words.length || matches > 0;
+      faqTestimonial.hidden = words.length > 0;
+      searchStatus.textContent = words.length
+        ? (matches === 1 ? '1 question found' : matches + ' questions found')
+        : '';
     });
 
     // Auto-open and scroll to a hashed FAQ item (e.g. /faq#some-question)
