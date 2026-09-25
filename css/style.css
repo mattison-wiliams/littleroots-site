@@ -1414,7 +1414,12 @@ img {
   border-radius: 10px;
 }
 
-.belief-photo-row figcaption {
+.belief-figure {
+  margin: 0;
+}
+
+.belief-photo-row figcaption,
+.belief-figure figcaption {
   margin-top: 6px;
   font-size: 0.85rem;
   font-style: italic;
