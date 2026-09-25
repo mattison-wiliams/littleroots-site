@@ -72,6 +72,7 @@
   <section class="section">
     <div class="container">
       <p class="faq-intro">Want the full details? Read our <a href="/Little-Roots-Family-Handbook.pdf" target="_blank">Family Handbook<span class="sr-only"> (opens in new tab)</span></a> or see every class date on our <a href="/Little-Roots-Calendar-2026-2027.pdf" target="_blank">2026 to 2027 calendar<span class="sr-only"> (opens in new tab)</span></a>.</p>
+      <p class="faq-intro faq-ask">Don&rsquo;t see your question answered? Email us at <a href="mailto:hello@littleroots.school">hello@littleroots.school</a>.</p>
       <div class="faq-search">
         <label for="faq-search-input" class="sr-only">Search the FAQ</label>
         <input type="search" id="faq-search-input" class="faq-search-input" placeholder="Search questions, like rain, snack, or siblings" autocomplete="off">
@@ -384,8 +385,6 @@
         </details>
         </div>
 
-        <p class="faq-ask">Don&rsquo;t see your question answered? Email us at <a href="mailto:hello@littleroots.school">hello@littleroots.school</a>.</p>
-
         <p class="faq-no-results" hidden>No matches for that one. Try another word, or email me at <a href="mailto:hello@littleroots.school">hello@littleroots.school</a> and I&rsquo;ll be happy to help.</p>
 
         <blockquote class="testimonial testimonial--inline">
@@ -480,7 +479,6 @@
     const searchStatus = document.querySelector('.faq-search-status');
     const faqTestimonial = document.querySelector('.faq-list .testimonial--inline');
     const faqJump = document.querySelector('.faq-jump');
-    const faqAsk = document.querySelector('.faq-ask');
     const startsOpen = Array.from(faqItems).map(item => item.open);
 
     function setOpen(item, open) {
@@ -511,7 +509,6 @@
       });
       faqJump.hidden = words.length > 0;
       noResults.hidden = !words.length || matches > 0;
-      faqAsk.hidden = !noResults.hidden;
       faqTestimonial.hidden = words.length > 0;
       searchStatus.textContent = words.length
         ? (matches === 1 ? '1 question found' : matches + ' questions found')

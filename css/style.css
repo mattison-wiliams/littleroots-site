@@ -2525,10 +2525,8 @@ img {
   text-align: center;
 }
 
-.faq-ask {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 1.05rem;
+.faq-intro + .faq-ask {
+  margin-top: -14px;
 }
 
 .faq-ask a {
