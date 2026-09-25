@@ -2588,3 +2588,11 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* Gear page closing "Ready to join us" heading matches the other pages */
+.page-recommended .cta-section .section-title {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  letter-spacing: normal;
+  font-size: 2.4rem;
+}
