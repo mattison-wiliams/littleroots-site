@@ -107,14 +107,17 @@
           <p class="summer-info">Wednesdays &middot; 9:30&ndash;11:00 AM<br>McCollum Park, Everett, WA</p>
         </div>
       </div>
-      <a href="register.html" class="btn btn-rust">Join Us!</a>
+      <div class="hero-buttons">
+        <a href="register.html" class="btn btn-rust">Join Us!</a>
+        <a href="https://form.jotform.com/261978581507066" class="btn btn-light" target="_blank" rel="noopener noreferrer">Try a $15 class<span class="sr-only"> (opens in new tab)</span></a>
+      </div>
     </div>
   </section>
 
   <!-- Trial Session -->
   <section class="section trial-section">
     <div class="container">
-      <p class="trial-text">New here? Try a session first. <a href="https://form.jotform.com/261978581507066" target="_blank" rel="noopener noreferrer">Book a $15 trial session<span class="sr-only"> (opens in new tab)</span></a> and join us for one Wednesday morning in the forest. Book by 3 PM Tuesday to join us that Wednesday, since the meeting spot details come by email.</p>
+      <p class="trial-text"><strong>About the $15 trial:</strong> book by 3 PM Tuesday to join us that Wednesday, since the meeting spot details come by email. Loved it? Your trial counts as your first class.</p>
     </div>
   </section>
 
@@ -278,6 +281,10 @@
     </div>
   </footer>
 
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
   <script>
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -286,6 +293,16 @@
       const isOpen = navLinks.classList.toggle('open');
       hamburger.classList.toggle('active');
       hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Back to top button: shows after scrolling down a ways
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > window.innerHeight * 1.5);
+    }, { passive: true });
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 

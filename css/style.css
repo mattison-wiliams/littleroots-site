@@ -328,6 +328,30 @@ img {
   box-shadow: 0 4px 16px rgba(125, 62, 38, 0.4);
 }
 
+/* homepage hero: Join Us and trial buttons side by side, stacked on small phones */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.btn-light {
+  background-color: var(--cream);
+  color: var(--forest-green);
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 16px 36px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+.btn-light:hover {
+  background-color: #FFFFFF;
+  color: var(--forest-green);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
 /* ===== About: Hero ===== */
 .about-hero {
   position: relative;
@@ -2581,6 +2605,16 @@ img {
 
 .register-trial .trial-text {
   margin-bottom: 22px;
+}
+
+.trial-pay-backup {
+  margin-top: 18px;
+  font-size: 0.95rem;
+  color: var(--warm-brown);
+}
+
+.trial-pay-backup a {
+  color: var(--forest-green);
 }
 
 @media (max-width: 700px) {
