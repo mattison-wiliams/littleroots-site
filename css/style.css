@@ -339,6 +339,10 @@ img {
   gap: 14px;
 }
 
+.hero-buttons--left {
+  justify-content: flex-start;
+}
+
 .btn-light {
   background-color: var(--cream);
   color: var(--forest-green);
