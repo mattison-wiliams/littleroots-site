@@ -1571,6 +1571,14 @@ img {
   gap: 10px;
 }
 
+.home-intro {
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--warm-brown);
+  margin: 0 0 18px;
+}
+
 .price-row {
   display: flex;
   justify-content: center;
