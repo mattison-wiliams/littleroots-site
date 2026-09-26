@@ -5,7 +5,14 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 ## Working with the site owner
 
 - The owner is not a developer. Explain what changed in plain, friendly English, with no code or jargon.
-- When asked to make a change, just make it. When done, summarize what changed and publish it (push to `main`).
+- When asked to make a change, just make it. When done, summarize what changed, then save it (commit and push to the working branch) without publishing.
+
+## Publishing (Netlify credits)
+
+- Every push to `main` is a Netlify production deploy, and each one uses credits from a limited monthly allowance. In September 2026 the credits ran out from publishing after every small edit.
+- Do not push to `main` after each change. Save changes on the working branch and publish only when the owner says "publish" (or clearly asks for it to go live). Then publish everything in one push to `main`.
+- After each change, remind the owner in one short line that it's saved but not live yet, and to say "publish" when they're ready.
+- Changes that don't affect the website itself (like edits to this file or the redesign notes) can go to `main` with `[skip netlify]` in the commit message, so Netlify doesn't build or use credits.
 - Keep it simple. Do not add frameworks, build tools, or dependencies.
 
 ## Writing style for site text
