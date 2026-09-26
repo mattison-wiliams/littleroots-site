@@ -1560,23 +1560,50 @@ img {
 /* ===== Pricing (Homepage) ===== */
 .pricing-section {
   background-color: var(--cream);
-  padding: 32px 0 48px;
+  padding: 56px 0 64px;
+}
+
+.home-intro {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.35rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--forest-green);
+}
+
+.intro-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 28px auto 32px;
+}
+
+.intro-divider span {
+  width: 60px;
+  border-top: 1px solid var(--sage);
+  opacity: 0.6;
+}
+
+.intro-divider img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
 }
 
 .pricing-block {
-  max-width: 460px;
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.home-intro {
-  text-align: center;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--warm-brown);
-  margin: 0 0 18px;
+  background-color: #fff;
+  border: 1px solid rgba(122, 154, 109, 0.35);
+  border-radius: 18px;
+  padding: 28px 32px;
+  box-shadow: 0 6px 20px rgba(92, 58, 30, 0.06);
 }
 
 .price-row {
@@ -1589,9 +1616,10 @@ img {
 
 .price-amount {
   font-family: 'Caveat', cursive;
-  font-size: 1.4rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--forest-green);
+  line-height: 1;
 }
 
 .price-note {
@@ -2443,8 +2471,34 @@ img {
 }
 
 .price-note--group {
-  margin-top: 10px;
+  align-self: center;
+  margin-top: 8px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background-color: var(--sage-light);
+  color: var(--sage-text);
+  font-size: .88rem;
   font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .pricing-section {
+    padding: 40px 0 48px;
+  }
+
+  .home-intro {
+    font-size: 1.15rem;
+  }
+
+  .pricing-block {
+    padding: 24px 20px;
+  }
+
+  .price-note--group {
+    border-radius: 12px;
+    padding: 8px 14px;
+    line-height: 1.4;
+  }
 }
 
 @media (max-width: 700px) {
