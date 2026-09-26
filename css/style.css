@@ -2470,9 +2470,15 @@ img {
   color: var(--forest-green);
 }
 
+.price-note--join {
+  margin-top: 6px;
+  font-weight: 600;
+  color: var(--forest-green);
+}
+
 .price-note--group {
   align-self: center;
-  margin-top: 8px;
+  margin-bottom: 4px;
   padding: 6px 16px;
   border-radius: 999px;
   background-color: var(--sage-light);
