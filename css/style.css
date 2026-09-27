@@ -1729,8 +1729,8 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* left keeps rainbow/stump visible; bottom keeps lily-of-the-valley in frame */
-  object-position: 20% bottom;
+  /* keeps the ladybug boots and the edge of the oat bin in frame */
+  object-position: center 55%;
   z-index: 0;
 }
 
