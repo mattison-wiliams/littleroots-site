@@ -2678,16 +2678,6 @@ img {
   margin-bottom: 22px;
 }
 
-.trial-pay-backup {
-  margin-top: 18px;
-  font-size: 0.95rem;
-  color: var(--warm-brown);
-}
-
-.trial-pay-backup a {
-  color: var(--forest-green);
-}
-
 @media (max-width: 700px) {
   .pay-options {
     grid-template-columns: 1fr;
