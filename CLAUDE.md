@@ -64,6 +64,7 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 - Resize and compress photos so pages stay fast, and save them as .jpg in the `images` folder with simple lowercase names.
 - Write a short, descriptive alt text for every photo.
 - Check how the photo is cropped on both phone and computer screen sizes.
+- Do not re-compress the existing banner photos to make pages faster. It was tried and made them blurry.
 
 ## Before publishing
 
