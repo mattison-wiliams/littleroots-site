@@ -189,6 +189,11 @@ img {
   border-bottom-color: var(--forest-green);
 }
 
+/* Enroll button in the header, shown only when the menu is collapsed */
+.header-enroll {
+  display: none;
+}
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -2746,6 +2751,29 @@ img {
     margin-left: auto;
   }
 
+  .header-enroll {
+    display: inline-block;
+    margin-left: auto;
+    padding: 8px 18px;
+    background-color: #9C4E30;
+    color: var(--cream);
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 30px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .header-enroll:hover {
+    background-color: #7D3E26;
+    color: var(--cream);
+  }
+
+  .header-enroll + .hamburger {
+    margin-left: 14px;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -2818,5 +2846,26 @@ html:has(.quicknav) {
 
   html:has(.quicknav) {
     scroll-padding-top: 185px;
+  }
+}
+
+/* very small phones: shrink the header so the Enroll button fits beside the name */
+@media (max-width: 380px) {
+  .logo {
+    font-size: 1.15rem;
+  }
+
+  .logo-img {
+    height: 44px;
+    width: 44px;
+  }
+
+  .header-enroll {
+    padding: 7px 14px;
+    font-size: 0.9rem;
+  }
+
+  .header-enroll + .hamburger {
+    margin-left: 10px;
   }
 }
