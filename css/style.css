@@ -340,6 +340,45 @@ img {
   margin-bottom: 0;
 }
 
+/* homepage photo hero on computers: a smaller text box up top and the
+   buttons at the bottom, so the parent and toddler show in between */
+@media (min-width: 769px) {
+  .hero--photo {
+    padding: 28px 0 36px;
+  }
+
+  .hero--photo .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 700px;
+  }
+
+  .hero--photo .hero-img {
+    object-position: center 54%;
+  }
+
+  .hero--photo .hero-text-block {
+    max-width: 720px;
+    padding: 22px 36px;
+    margin-bottom: 0;
+  }
+
+  .hero--photo h1 {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+  }
+
+  .hero--photo .subtitle {
+    margin-bottom: 14px;
+  }
+
+  .hero--photo .summer-info {
+    font-size: 1.15rem;
+  }
+}
+
 .btn-rust {
   background-color: #9C4E30;
   font-size: 1.15rem;
@@ -1710,7 +1749,7 @@ img {
 }
 
 .crown-photo-section .crown-callout-content {
-  text-align: left;
+  text-align: center;
 }
 
 .crown-photo-section .crown-callout-content p {
@@ -2909,4 +2948,29 @@ html:has(.quicknav) {
   .header-enroll + .hamburger {
     margin-left: 10px;
   }
+}
+
+/* Reading text: keep the main paragraphs at a comfortable size */
+.tl-body p,
+.about-story-text p,
+.about-belief p,
+.approach-intro p,
+.belief-block p,
+.faq-answer p,
+.recommended-intro p,
+.gear-product p,
+.tip-callout p {
+  font-size: 1.0625rem;
+}
+
+/* Smaller supporting text, one step below the main paragraphs */
+.price-note,
+.pay-current,
+.about-teacher-creds li,
+.about-teacher-quote,
+.about-teacher-quote p,
+.belief-block .station-builds,
+.faq-answer .look-for,
+.gear-partner-card p {
+  font-size: 1rem;
 }
