@@ -2619,6 +2619,18 @@ img {
   align-items: start;
 }
 
+.pay-current {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background-color: var(--sage-light);
+  border-radius: 12px;
+  font-size: 0.95rem;
+}
+
+.pay-current strong {
+  color: var(--forest-green);
+}
+
 .pay-card {
   background-color: var(--cream);
   border: 1px solid rgba(122, 154, 109, 0.35);
