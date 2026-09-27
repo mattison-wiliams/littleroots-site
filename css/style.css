@@ -189,6 +189,24 @@ img {
   border-bottom-color: var(--forest-green);
 }
 
+/* Enroll link in the full menu looks like a button so it stands out */
+@media (min-width: 1001px) {
+  .nav-links a.nav-enroll {
+    padding: 8px 20px;
+    background-color: #9C4E30;
+    color: var(--cream);
+    border-radius: 30px;
+    border-bottom: none;
+    transition: background-color 0.3s;
+  }
+
+  .nav-links a.nav-enroll:hover,
+  .nav-links a.nav-enroll.active {
+    background-color: #7D3E26;
+    color: var(--cream);
+  }
+}
+
 /* Enroll button in the header, shown only when the menu is collapsed */
 .header-enroll {
   display: none;
@@ -1786,6 +1804,29 @@ img {
   max-width: 620px;
   margin: 32px auto 16px;
   font-size: 0.95rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 24px;
+  margin: 0 auto 20px;
+  padding-bottom: 20px;
+  max-width: 720px;
+  border-bottom: 1px solid rgba(255, 248, 235, 0.2);
+}
+
+.footer-nav a {
+  color: var(--cream);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: var(--cream);
+  text-decoration: underline;
 }
 
 .footer-links {
