@@ -1773,22 +1773,22 @@ img {
 }
 
 .footer-signup {
+  margin: 8px 0 28px;
+}
+
+.footer-signup p {
   font-size: 0.95rem;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
-.footer-signup a {
-  color: var(--cream);
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.footer-signup a:hover {
-  color: var(--cream);
+.footer-signup .btn-light {
+  font-size: 1rem;
+  padding: 12px 30px;
 }
 
 .trial-list {
-  margin-top: 22px;
+  max-width: 620px;
+  margin: 32px auto 16px;
   font-size: 0.95rem;
 }
 
