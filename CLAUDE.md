@@ -50,6 +50,8 @@ The owner dislikes these AI writing habits. Avoid them in site text and in anyth
 - Generic words: "intentional," "meaningful," "thoughtfully curated," "foster," "cultivate," "empower," "nurture"
 - Em dashes
 
+Exception the owner chose to keep: "That's where my love of early childhood first took root" in the About page story. Do not flag it.
+
 ## Homepage hero line
 
 - The line under "Kids being kids in the forest." changes each season. It pairs one real moment from the trail with one real messy moment from the stations, taken from that season's lesson plans. Avoid lists of three.
