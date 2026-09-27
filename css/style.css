@@ -2314,6 +2314,10 @@ img {
   margin-bottom: 28px;
 }
 
+.register-intro-lead {
+  margin-bottom: 12px;
+}
+
 .register-steps {
   list-style: none;
   padding: 0;
@@ -2365,29 +2369,6 @@ img {
 
 .register-steps a {
   color: var(--forest-green);
-}
-
-.register-perks {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 8px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-
-.register-perks li {
-  border: 1px solid var(--sage);
-  border-radius: 999px;
-  padding: 6px 14px;
-  font-size: 0.9rem;
-  color: var(--warm-brown);
-}
-
-.register-perks strong {
-  color: var(--forest-green);
-  margin-right: 4px;
 }
 
 .register-perks-more {
