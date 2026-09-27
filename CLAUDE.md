@@ -27,6 +27,28 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 - Parent testimonials are quoted word for word. Do not edit or flag their wording.
 - The header name is "Little Roots School" on purpose, ahead of a planned preschool rebrand. Do not flag it as inconsistent with "Little Roots Forest School" elsewhere.
 
+## Writing tells to avoid
+
+The owner dislikes these AI writing habits. Avoid them in site text and in anything written for the owner (emails, captions, drafts).
+
+- "That's the point." and any "that's the..." phrasing
+- "It's not X, it's Y."
+- "More than just..."
+- "At the heart of..."
+- "A place where..."
+- "Whether you're..."
+- "That's where..."
+- "Here, we..."
+- "We don't ___, we ___."
+- Too many lists of three
+- Strings of short, punchy sentences
+- Polished brand manifesto language
+- Fake emotional conclusions
+- Neat rhetorical reversals and overly symmetrical sentences
+- Made up sayings or clever closing lines
+- Generic words: "intentional," "meaningful," "thoughtfully curated," "foster," "cultivate," "empower," "nurture"
+- Em dashes
+
 ## Homepage hero line
 
 - The line under "Kids being kids in the forest." changes each season. It pairs one real moment from the trail with one real messy moment from the stations, taken from that season's lesson plans. Avoid lists of three.
