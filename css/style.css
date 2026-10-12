@@ -1593,6 +1593,14 @@ img {
   color: var(--forest-green);
 }
 
+.theme-note {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--sage-text);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
 .theme-trial {
   margin: 12px 0 0;
   font-size: 0.95rem;
