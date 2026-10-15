@@ -56,7 +56,7 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 ## Homepage hero line
 
 - The line under "Kids being kids in the forest." changes each season. It pairs one real moment from the trail with one real messy moment from the stations, taken from that season's lesson plans. Avoid lists of three.
-- Current (fall 2026): turning over logs to see who lives underneath, and leaf soup in the mud kitchen. Swap for winter when the Winter term starts December 2.
+- Current (fall 2026, written by the owner for mushroom week): "This fall we're watching the forest change, from the first red leaves to the mushrooms that come up after the rain." The owner wants it to stay for now, so do not swap it back or flag that it skips the stations moment. Swap for winter when the Winter term starts December 2.
 
 ## Photos
 
