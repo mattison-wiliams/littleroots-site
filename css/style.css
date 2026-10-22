@@ -766,6 +766,11 @@ img {
   color: var(--warm-brown);
 }
 
+.gear-outfit-cols + .gear-outfit-note {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
 .gear-outfit-note a {
   font-weight: 400;
 }
