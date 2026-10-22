@@ -771,9 +771,9 @@ img {
 }
 
 /* ===== Cold and Wet Weather page ===== */
-/* banner reuses the Gear Guide hero; keep the toddler's head and book in view */
+/* banner reuses the Gear Guide hero; keep the toddler in view at the bottom of the photo */
 .weather-hero .gear-hero-img {
-  object-position: center 45%;
+  object-position: center 100%;
 }
 
 .weather-intro {
@@ -845,7 +845,7 @@ img {
 }
 
 .weather-photo-tall {
-  max-width: 360px;
+  max-width: 520px;
   margin: 8px auto 16px;
 }
 
