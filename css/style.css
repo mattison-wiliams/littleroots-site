@@ -770,6 +770,47 @@ img {
   font-weight: 400;
 }
 
+/* ===== Seasonal note (Home and Enroll), shown by date ===== */
+.season-note {
+  text-align: center;
+  margin: 28px auto 0;
+}
+
+.register-content .season-note {
+  margin: 0 auto 28px;
+}
+
+.season-note[hidden] {
+  display: none;
+}
+
+.season-note a {
+  display: inline-block;
+  max-width: 100%;
+  padding: 10px 20px;
+  background-color: var(--sage-light);
+  border: 1px solid rgba(46, 94, 46, .25);
+  border-radius: 999px;
+  color: var(--forest-green);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.season-note a:hover {
+  background-color: #e4ede0;
+  border-color: rgba(46, 94, 46, .45);
+}
+
+@media (max-width: 640px) {
+  .season-note a {
+    border-radius: 16px;
+    padding: 10px 16px;
+  }
+}
+
 /* ===== Cold and Wet Weather page ===== */
 /* banner reuses the Gear Guide hero; keep the toddler in view at the bottom of the photo */
 .weather-hero .gear-hero-img {
