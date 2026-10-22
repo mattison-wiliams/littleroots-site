@@ -859,7 +859,8 @@ img {
   }
 
   .weather-photos {
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 14px;
   }
 }
 
