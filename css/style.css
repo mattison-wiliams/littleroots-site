@@ -770,6 +770,62 @@ img {
   font-weight: 400;
 }
 
+/* ===== Cold and Wet Weather page ===== */
+.weather-hero .subtitle {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.weather-content {
+  max-width: 800px;
+}
+
+.weather-content .gear-section-label {
+  margin-bottom: 24px;
+}
+
+/* each tip is its own short card, styled like the Gear Guide tip boxes */
+.weather-tips {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.weather-tips li {
+  background-color: var(--sage-light);
+  border-left: 4px solid var(--forest-green);
+  border-radius: 8px;
+  padding: 18px 22px;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.section--alt .weather-tips li {
+  background-color: white;
+}
+
+.weather-text {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.weather-tips a,
+.weather-text a {
+  color: var(--forest-green);
+  font-weight: 600;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .weather-tips li {
+    padding: 16px 18px;
+  }
+}
+
 /* tip box under the Fall, Winter & Spring intro, before the dropdowns */
 .gear-intro-tip {
   margin-top: 0;
