@@ -759,6 +759,23 @@ img {
   }
 }
 
+/* short plain note under the outfit lists */
+.gear-start-callout .gear-outfit-note {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--warm-brown);
+}
+
+.gear-outfit-note a {
+  font-weight: 400;
+}
+
+/* tip box under the Fall, Winter & Spring intro, before the dropdowns */
+.gear-intro-tip {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
 /* Photo inside a dropdown section (Gear page and FAQ) */
 .gear-inline-photo,
 .faq-photo {
