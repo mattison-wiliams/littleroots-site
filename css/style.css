@@ -3166,3 +3166,24 @@ html:has(.quicknav) {
 .gear-partner-card p {
   font-size: 1rem;
 }
+
+/* gear page: line for families who haven't enrolled yet, above the checklist */
+.gear-visitor-note {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* gear page: affiliate note moved up, above the first affiliate links */
+.gear-affiliate-note--top {
+  max-width: 800px;
+  margin: 24px auto 0;
+  padding: 12px 20px;
+  border-top: none;
+  border-radius: 12px;
+}
+
+.gear-affiliate-note--top + .gear-start-callout {
+  margin-top: 24px;
+}
