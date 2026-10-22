@@ -3187,3 +3187,7 @@ html:has(.quicknav) {
 .gear-affiliate-note--top + .gear-start-callout {
   margin-top: 24px;
 }
+
+.gear-new-family p + p {
+  margin-top: 12px;
+}
