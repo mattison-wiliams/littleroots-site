@@ -73,21 +73,6 @@
   <section class="section register-signup">
     <div class="container register-content">
 
-      <!-- Seasonal note: shows each year from data-start through data-end (month-day) -->
-      <div class="season-note" data-start="10-01" data-end="03-31" hidden>
-        <a href="/cold-weather">Cold mornings are here. See how we stay warm at Little Roots. <span aria-hidden="true">&rarr;</span></a>
-      </div>
-      <script>
-        document.querySelectorAll('.season-note').forEach(function (note) {
-          var now = new Date();
-          var today = (now.getMonth() + 1) * 100 + now.getDate();
-          var start = parseInt(note.dataset.start.replace('-', ''), 10);
-          var end = parseInt(note.dataset.end.replace('-', ''), 10);
-          // when the season wraps past New Year (like October to March), show before the end date or after the start date
-          note.hidden = start <= end ? (today < start || today > end) : (today < start && today > end);
-        });
-      </script>
-
       <p class="register-steps-intro register-intro-lead">A few spots are open right now for ages 1 to 3, and three year olds are welcome until they turn 4.</p>
       <p class="register-steps-intro">Join anytime! Your first month is prorated, so joining with two Wednesdays left is just $39. After that, it&rsquo;s $99 a month.</p>
       <details class="faq-item register-themes">

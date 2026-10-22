@@ -776,10 +776,6 @@ img {
   margin: 28px auto 0;
 }
 
-.register-content .season-note {
-  margin: 0 auto 28px;
-}
-
 .season-note[hidden] {
   display: none;
 }
