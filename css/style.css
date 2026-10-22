@@ -3191,3 +3191,33 @@ html:has(.quicknav) {
 .gear-new-family p + p {
   margin-top: 12px;
 }
+
+/* new family checklist opens and closes like the gear dropdowns */
+summary.gear-start-callout-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  list-style: none;
+}
+
+summary.gear-start-callout-title::-webkit-details-marker {
+  display: none;
+}
+
+summary.gear-start-callout-title::after {
+  content: '+';
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.4rem;
+  color: var(--sage-text);
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.gear-new-family:not([open]) > summary.gear-start-callout-title {
+  margin-bottom: 0;
+}
+
+.gear-new-family[open] > summary.gear-start-callout-title::after {
+  content: '\2212';
+}
