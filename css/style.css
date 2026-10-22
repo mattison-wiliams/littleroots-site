@@ -771,9 +771,23 @@ img {
 }
 
 /* ===== Cold and Wet Weather page ===== */
-.weather-hero .subtitle {
-  max-width: 560px;
+/* banner reuses the Gear Guide hero; keep the toddler's head and book in view */
+.weather-hero .gear-hero-img {
+  object-position: center 45%;
+}
+
+.weather-intro {
+  padding: 48px 0 8px;
+}
+
+.weather-intro p {
+  max-width: 640px;
   margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--warm-brown);
 }
 
 .weather-content {
@@ -781,30 +795,25 @@ img {
 }
 
 .weather-content .gear-section-label {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
-/* each tip is its own short card, styled like the Gear Guide tip boxes */
+/* tips as a simple list with thin lines between, like the Gear Guide product rows */
 .weather-tips {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
 .weather-tips li {
-  background-color: var(--sage-light);
-  border-left: 4px solid var(--forest-green);
-  border-radius: 8px;
-  padding: 18px 22px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(122,154,109,.25);
   font-size: 1.0625rem;
   line-height: 1.7;
 }
 
-.section--alt .weather-tips li {
-  background-color: white;
+.weather-tips li:last-child {
+  border-bottom: none;
 }
 
 .weather-text {
@@ -820,9 +829,37 @@ img {
   text-underline-offset: 2px;
 }
 
+.weather-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.weather-photos img,
+.weather-photo-tall {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.weather-photo-tall {
+  max-width: 360px;
+  margin: 8px auto 16px;
+}
+
 @media (max-width: 640px) {
-  .weather-tips li {
-    padding: 16px 18px;
+  .weather-intro {
+    padding: 36px 0 0;
+  }
+
+  .weather-intro p {
+    font-size: 1.05rem;
+  }
+
+  .weather-photos {
+    gap: 10px;
   }
 }
 
