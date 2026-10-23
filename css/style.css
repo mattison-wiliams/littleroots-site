@@ -927,6 +927,11 @@ img {
   border-radius: 16px;
 }
 
+.gear-video-link {
+  text-align: center;
+  margin: -12px 0 24px;
+}
+
 /* ===== Gear Page: Packing Checklist ===== */
 .gear-checklist {
   max-width: 800px;
