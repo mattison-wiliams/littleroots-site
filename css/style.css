@@ -3350,7 +3350,7 @@ summary.gear-start-callout-title::after {
 /* tutoring page: round photo beside the About me text, centered above it on phones */
 .tutor-about {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 28px;
 }
 
@@ -3366,6 +3366,7 @@ summary.gear-start-callout-title::after {
 @media (max-width: 640px) {
   .tutor-about {
     flex-direction: column;
+    align-items: center;
     gap: 18px;
   }
 
