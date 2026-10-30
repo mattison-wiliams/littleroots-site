@@ -3346,3 +3346,31 @@ summary.gear-start-callout-title::after {
     padding: 16px 18px 4px;
   }
 }
+
+/* tutoring page: round photo beside the About me text, centered above it on phones */
+.tutor-about {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.tutor-photo {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
+}
+
+@media (max-width: 640px) {
+  .tutor-about {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .tutor-photo {
+    width: 160px;
+    height: 160px;
+  }
+}
