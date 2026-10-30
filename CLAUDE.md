@@ -17,7 +17,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 
 ## Writing style for site text
 
-- Do not use dashes (-, –, —) or semicolons in visible text. Use commas, colons, periods, or "to" for ranges.
+- Do not use dashes (– or —) to break up sentences, or semicolons, in visible text. Use commas, colons, periods, or "to" for ranges. Hyphens in normal hyphenated words are fine (like "hands-on" or "Washington-licensed").
   - Exceptions the owner chose to keep: the class time "9:30–11:00 AM" in the footer, and product names that include a dash on the Gear Guide page.
 - Words for the adult who comes to class: use "you" when talking to the parent reading the page, "parent or caregiver" for rules (like who has to stay), and "parents and caregivers" in search and link preview descriptions. "Grown-ups" (with the hyphen) is allowed in playful spots, like the question of the day.
 - Prorating example used on the site: joining with two Wednesdays left is $39.
