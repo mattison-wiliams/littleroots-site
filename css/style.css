@@ -3394,3 +3394,19 @@ summary.gear-start-callout-title::after {
 .tutor-top-btn {
   margin-top: 22px;
 }
+
+/* tutoring page: "More about my background" dropdown under About me */
+.tutor-more {
+  margin-top: 28px;
+  border-top: 1px solid rgba(122, 154, 109, 0.3);
+  border-bottom: 1px solid rgba(122, 154, 109, 0.3);
+}
+
+.tutor-more .faq-answer h3 {
+  font-size: 1.5rem;
+  margin: 18px 0 6px;
+}
+
+.tutor-more .faq-answer h3:first-child {
+  margin-top: 0;
+}
