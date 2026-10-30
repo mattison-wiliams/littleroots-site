@@ -3254,13 +3254,22 @@ summary.gear-start-callout-title::after {
 }
 
 /* ===== Tutoring page (direct link only, not in the menu) ===== */
-.tutor-hero {
-  padding: 64px 0 48px;
+/* banner reuses the Gear Guide hero; keep Mattison in view */
+.tutor-banner .gear-hero-img {
+  object-position: center 58%;
 }
 
-.tutor-hero .subtitle {
-  max-width: 620px;
-  margin-bottom: 0;
+.tutor-intro {
+  text-align: center;
+  padding: 48px 0 56px;
+}
+
+.tutor-intro-text {
+  max-width: 640px;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 1.15rem;
+  line-height: 1.7;
 }
 
 .page-tutoring .weather-text + .weather-text {
@@ -3329,12 +3338,24 @@ summary.gear-start-callout-title::after {
 }
 
 @media (max-width: 640px) {
-  .tutor-hero {
-    padding: 44px 0 36px;
+  .tutor-banner h1 {
+    font-size: 3rem;
   }
 
-  .tutor-hero h1 {
-    font-size: 2.8rem;
+  .tutor-banner {
+    min-height: 440px;
+  }
+
+  .tutor-banner .gear-hero-img {
+    object-position: center 30%;
+  }
+
+  .tutor-intro {
+    padding: 36px 0 44px;
+  }
+
+  .tutor-intro-text {
+    font-size: 1.05rem;
   }
 
   .tutor-rates {
@@ -3386,10 +3407,6 @@ summary.gear-start-callout-title::after {
   display: block;
 }
 
-.tutor-classroom-photo {
-  max-width: 640px;
-  margin-top: 24px;
-}
 
 .tutor-top-btn {
   margin-top: 22px;
