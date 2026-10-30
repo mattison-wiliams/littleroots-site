@@ -3226,3 +3226,29 @@ summary.gear-start-callout-title::after {
 .gear-new-family[open] > summary.gear-start-callout-title::after {
   content: '\2212';
 }
+
+/* Enroll page: buttons inside the How to Join steps */
+.register-steps .step-btn {
+  margin-top: 14px;
+}
+.register-steps a.btn {
+  color: var(--cream);
+}
+.register-steps a.btn-outline {
+  color: var(--forest-green);
+}
+.register-steps a.btn-outline:hover {
+  color: var(--cream);
+}
+.register-steps p + p {
+  margin-top: 8px;
+}
+@media (max-width: 600px) {
+  .register-steps .step-btn {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .register-steps .btn-rust {
+    font-size: 1rem;
+  }
+}
