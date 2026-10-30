@@ -3375,3 +3375,13 @@ summary.gear-start-callout-title::after {
     height: 160px;
   }
 }
+
+/* tutoring page: founding rates note under the intro */
+.tutor-founding-note {
+  margin-top: 24px;
+  font-weight: 400;
+}
+
+.tutor-founding-note strong {
+  display: block;
+}
