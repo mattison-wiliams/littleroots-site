@@ -68,6 +68,19 @@
     </div>
   </section>
 
+  <nav class="quicknav" aria-label="Jump to section">
+    <div class="container quicknav-inner">
+      <a href="#about-me">About Me</a>
+      <a href="#what-i-tutor">Subjects</a>
+      <a href="#how-i-teach">How I Teach</a>
+      <a href="#progress">Progress</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#rates">Rates</a>
+      <a href="#payment">Payment</a>
+      <a href="#get-started">Get Started</a>
+    </div>
+  </nav>
+
   <section class="tutor-intro">
     <div class="container">
       <p class="tutor-intro-text">I&rsquo;m a Washington-licensed K to 8 teacher offering tutoring for elementary and middle school students, online or in person around Everett.</p>
@@ -271,6 +284,22 @@
       const isOpen = navLinks.classList.toggle('open');
       hamburger.classList.toggle('active');
       hamburger.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </a>
+
+  <script>
+    // Back to top button: shows after scrolling down a ways
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > window.innerHeight * 1.5);
+    }, { passive: true });
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 
