@@ -3272,7 +3272,8 @@ summary.gear-start-callout-title::after {
   line-height: 1.7;
 }
 
-.page-tutoring .weather-text + .weather-text {
+.page-tutoring .weather-text + .weather-text,
+.page-tutoring .weather-tips + .weather-text {
   margin-top: 14px;
 }
 
