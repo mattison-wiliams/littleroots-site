@@ -2920,6 +2920,14 @@ img {
   font-size: 0.95rem;
 }
 
+.pay-current p {
+  margin: 0;
+}
+
+.pay-current p + p {
+  margin-top: 10px;
+}
+
 .pay-current strong {
   color: var(--forest-green);
 }
