@@ -207,6 +207,23 @@ img {
   }
 }
 
+/* Full menu on smaller laptops: tighten the spacing so every link fits on one line */
+@media (min-width: 1001px) and (max-width: 1250px) {
+  .nav-links {
+    gap: 16px;
+    margin-left: 24px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;
+  }
+
+  .logo {
+    white-space: nowrap;
+    font-size: 1.3rem;
+  }
+}
+
 /* Enroll button in the header, shown only when the menu is collapsed */
 .header-enroll {
   display: none;
