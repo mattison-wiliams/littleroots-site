@@ -3410,3 +3410,9 @@ summary.gear-start-callout-title::after {
 .tutor-more .faq-answer h3:first-child {
   margin-top: 0;
 }
+
+.tutor-top-note {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  font-style: italic;
+}
