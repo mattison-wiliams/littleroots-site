@@ -3385,3 +3385,8 @@ summary.gear-start-callout-title::after {
 .tutor-founding-note strong {
   display: block;
 }
+
+.tutor-classroom-photo {
+  max-width: 640px;
+  margin-top: 24px;
+}
