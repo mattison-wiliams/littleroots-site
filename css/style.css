@@ -3305,7 +3305,7 @@ summary.gear-start-callout-title::after {
 /* rates as two small price lists, side by side on computers, stacked on phones */
 .tutor-rates {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 18px;
   margin: 24px 0;
 }
