@@ -3338,8 +3338,41 @@ summary.gear-start-callout-title::after {
   text-align: right;
 }
 
-.tutor-founding {
-  font-style: italic;
+.tutor-callouts {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 18px;
+  margin: 28px 0 8px;
+}
+
+.tutor-callout {
+  border-radius: 16px;
+  padding: 20px 24px;
+}
+
+.tutor-callout h3 {
+  font-size: 1.75rem;
+  margin-bottom: 6px;
+}
+
+.tutor-callout p {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.tutor-callout--ask {
+  background-color: var(--cream);
+  border: 1.5px dashed var(--sage);
+}
+
+.tutor-callout--founding {
+  background-color: #fbece3;
+  border: 1px solid rgba(184,92,56,.35);
+}
+
+.tutor-callout--founding h3 {
+  color: var(--rust);
 }
 
 .tutor-start {
@@ -3387,6 +3420,15 @@ summary.gear-start-callout-title::after {
   .tutor-rates {
     grid-template-columns: 1fr;
     gap: 14px;
+  }
+
+  .tutor-callouts {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .tutor-callout {
+    padding: 18px;
   }
 
   .tutor-rate-card {
