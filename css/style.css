@@ -3602,9 +3602,8 @@ summary.gear-start-callout-title::after {
   text-transform: none;
 }
 
-.tutor-week-card.tutor-sample p.tutor-sample-quote {
+.tutor-week-card.tutor-sample p + p {
   margin-top: 10px;
-  font-style: italic;
 }
 
 .page-tutoring .tutor-weeks-note {
