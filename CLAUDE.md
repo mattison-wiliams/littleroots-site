@@ -76,3 +76,4 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 
 - "5 years in public schools" is correct. It counts student teaching along with Centennial (2 years), subbing (1 year), and math intervention (1 year). Do not flag it as adding up to 4.
 - The owner chose to keep "About me" where it is on the tutoring page (right after "What I tutor"). Do not suggest moving it lower.
+- "What I tutor" uses one combined "K to 8" subject list on purpose, not separate elementary and middle school lines, because some middle schoolers still need phonics and reading support. Do not split it by grade.
