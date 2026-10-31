@@ -3527,7 +3527,7 @@ summary.gear-start-callout-title::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 6px;
+  margin-top: 18px;
 }
 
 .tutor-week-card {
