@@ -3375,6 +3375,16 @@ summary.gear-start-callout-title::after {
   color: var(--rust);
 }
 
+.tutor-callout--sick {
+  background-color: var(--sage-light);
+  border: 1px solid rgba(122,154,109,.35);
+  margin-top: 20px;
+}
+
+.tutor-start-lead {
+  font-style: italic;
+}
+
 .tutor-start {
   text-align: center;
 }
