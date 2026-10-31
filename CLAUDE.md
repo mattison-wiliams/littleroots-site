@@ -71,3 +71,7 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 ## Before publishing
 
 - Preview changed pages at phone and computer widths and make sure nothing scrolls sideways on phones.
+
+## Tutoring page facts
+
+- "5 years in public schools" is correct. It counts student teaching along with Centennial (2 years), subbing (1 year), and math intervention (1 year). Do not flag it as adding up to 4.
