@@ -3591,6 +3591,22 @@ summary.gear-start-callout-title::after {
   }
 }
 
+.tutor-sample {
+  background-color: white;
+  margin: 4px 0 22px;
+}
+
+.tutor-sample .tutor-sample-note {
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.tutor-week-card.tutor-sample p.tutor-sample-quote {
+  margin-top: 10px;
+  font-style: italic;
+}
+
 .page-tutoring .tutor-weeks-note {
   margin-top: 18px;
 }
