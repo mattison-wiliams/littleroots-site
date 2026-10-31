@@ -77,3 +77,6 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 - "5 years in public schools" is correct. It counts student teaching along with Centennial (2 years), subbing (1 year), and math intervention (1 year). Do not flag it as adding up to 4.
 - The owner chose to keep "About me" where it is on the tutoring page (right after "What I tutor"). Do not suggest moving it lower.
 - "What I tutor" uses one combined "K to 8" subject list on purpose, not separate elementary and middle school lines, because some middle schoolers still need phonics and reading support. Do not split it by grade.
+- Example goals are split by readiness ("I can" goals, then SMART goals when the child is ready), not by grade. Do not add grade ranges back to them.
+- "Sprocket" is a real science curriculum (from NCEE) the owner taught at Centennial. It is not a typo.
+- The preschool line says "For three years" on purpose instead of years, because the owner left the preschool in winter and the Golden Apple came the next fall. Do not flag a timeline overlap.
