@@ -3525,7 +3525,7 @@ summary.gear-start-callout-title::after {
 
 .tutor-weeks {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin-top: 6px;
 }
@@ -3589,4 +3589,8 @@ summary.gear-start-callout-title::after {
   .tutor-week-card {
     padding: 18px;
   }
+}
+
+.page-tutoring .tutor-weeks-note {
+  margin-top: 18px;
 }
