@@ -19,6 +19,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 
 - Do not use dashes (– or —) to break up sentences, or semicolons, in visible text. Use commas, colons, periods, or "to" for ranges. Hyphens in normal hyphenated words are fine (like "hands-on" or "Washington-licensed").
   - Exceptions the owner chose to keep: the class time "9:30–11:00 AM" in the footer, and product names that include a dash on the Gear Guide page.
+  - The dash the owner dislikes is the em dash (—). A plain hyphen like "K-8" is fine. Do not flag "K-8" or treat it as a dash problem.
 - Words for the adult who comes to class: use "you" when talking to the parent reading the page, "parent or caregiver" for rules (like who has to stay), and "parents and caregivers" in search and link preview descriptions. "Grown-ups" (with the hyphen) is allowed in playful spots, like the question of the day.
 - Prorating example used on the site: joining with two Wednesdays left is $39.
 - Use "a month" for prices (for example "$99 a month"), not "/month" or "per month".
