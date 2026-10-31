@@ -3512,3 +3512,81 @@ summary.gear-start-callout-title::after {
     font-size: 0.88rem;
   }
 }
+
+/* tutoring: small headings and week cards inside "What tutoring looks like" */
+.tutor-subhead {
+  font-size: 1.7rem;
+  margin: 40px 0 10px;
+}
+
+.gear-section-label + .tutor-subhead {
+  margin-top: 8px;
+}
+
+.tutor-weeks {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+.tutor-week-card {
+  background-color: var(--sage-light);
+  border-radius: 16px;
+  padding: 20px 22px;
+}
+
+.tutor-week-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sage-text);
+  margin: 0 0 4px;
+}
+
+.tutor-week-card h4 {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--forest-green);
+  margin: 0 0 8px;
+  line-height: 1.35;
+}
+
+.tutor-week-card p:not(.tutor-week-label) {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+#sessions-and-goals .tutor-more {
+  margin-top: 18px;
+}
+
+.tutor-more .faq-answer h4 {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--forest-green);
+  margin: 22px 0 6px;
+}
+
+.tutor-more .faq-answer h4:first-child {
+  margin-top: 0;
+}
+
+.tutor-more .faq-answer .weather-text {
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  .tutor-weeks {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .tutor-week-card {
+    padding: 18px;
+  }
+}
