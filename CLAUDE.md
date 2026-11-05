@@ -21,7 +21,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
   - Exceptions the owner chose to keep: the class time "9:30–11:00 AM" in the footer, and product names that include a dash on the Gear Guide page.
   - The dash the owner dislikes is the em dash (—). A plain hyphen like "K-8" is fine. Do not flag "K-8" or treat it as a dash problem.
 - Words for the adult who comes to class: use "you" when talking to the parent reading the page, "parent or caregiver" for rules (like who has to stay), and "parents and caregivers" in search and link preview descriptions. "Grown-ups" (with the hyphen) is allowed in playful spots, like the question of the day.
-- Prorating example used on the site: joining with two Wednesdays left is $39.
+- Prorating rule used on the site: $25 for each Wednesday left in the first month (three left is $74, two left is $49). Full month is $99.
 - Use "a month" for prices (for example "$99 a month"), not "/month" or "per month".
 - Ages are written "ages 1 to 3".
 - Grade ranges are written "K to 8" (also "K to 5", "K to 3", and so on) to stay consistent across the site, even though "K-8" isn't against the style rules.
