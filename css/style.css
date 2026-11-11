@@ -2951,6 +2951,15 @@ img {
   margin-top: 10px;
 }
 
+.pay-card .pay-dates {
+  margin: 0 0 14px;
+  padding-left: 20px;
+}
+
+.pay-card .pay-dates li {
+  margin-bottom: 8px;
+}
+
 .pay-current {
   margin-top: 20px;
   padding: 16px 20px;
