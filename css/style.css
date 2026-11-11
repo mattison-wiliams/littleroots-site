@@ -2929,6 +2929,28 @@ img {
   align-items: start;
 }
 
+.pay-december {
+  margin: 0 0 24px;
+  padding: 24px 26px;
+  background-color: var(--sage-light);
+  border: 2px solid var(--forest-green);
+  border-radius: 14px;
+}
+
+.pay-december h3 {
+  margin: 0 0 10px;
+  color: var(--forest-green);
+  font-size: 1.6rem;
+}
+
+.pay-december p {
+  margin: 0;
+}
+
+.pay-december p + p {
+  margin-top: 10px;
+}
+
 .pay-current {
   margin-top: 20px;
   padding: 16px 20px;
