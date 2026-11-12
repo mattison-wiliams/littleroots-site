@@ -3369,6 +3369,15 @@ summary.gear-start-callout-title::after {
   text-align: right;
 }
 
+/* small note at the bottom of a rate box */
+.tutor-rate-note {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0;
+  padding: 14px 0 16px;
+  border-top: 1px solid rgba(122,154,109,.25);
+}
+
 .tutor-callouts {
   display: grid;
   grid-template-columns: 2fr 3fr;
