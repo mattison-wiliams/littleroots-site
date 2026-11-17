@@ -888,6 +888,62 @@ img {
   text-underline-offset: 2px;
 }
 
+/* cold weather page: the three layers as numbered cards */
+.weather-layers {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.weather-layers li {
+  background-color: var(--sage-light);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.weather-layers .step-number {
+  margin-bottom: 10px;
+}
+
+.weather-layers p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.weather-layers .weather-layer-name {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--forest-green);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 640px) {
+  .weather-layers {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+/* cold weather page: small handwritten labels over each tip list */
+.weather-list-label {
+  font-size: 1.5rem;
+  margin: 24px 0 0;
+}
+
+.weather-tips + .weather-list-label {
+  margin-top: 36px;
+}
+
+.weather-tips strong {
+  color: var(--forest-green);
+}
+
 /* cold weather page: Gear Guide button under How to dress */
 .weather-gear-btn {
   margin: 24px 0 0;
