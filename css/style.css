@@ -888,6 +888,16 @@ img {
   text-underline-offset: 2px;
 }
 
+/* cold weather page: Gear Guide button under How to dress */
+.weather-gear-btn {
+  margin: 24px 0 0;
+}
+
+.weather-gear-btn .btn {
+  color: var(--cream);
+  font-weight: 700;
+}
+
 .weather-photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
