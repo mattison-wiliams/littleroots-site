@@ -881,26 +881,20 @@ img {
   margin: 0;
 }
 
-.weather-notes {
-  margin-top: 28px;
-  background-color: white;
+.weather-carrier-note {
+  margin-top: 20px;
+  background-color: var(--sage-light);
   border-left: 4px solid var(--forest-green);
-  border-radius: 12px;
-  padding: 20px 24px;
+  border-radius: 8px;
+  padding: 12px 18px;
 }
 
-.weather-notes .weather-text strong {
+.weather-carrier-note strong {
   color: var(--forest-green);
 }
 
-.weather-notes .weather-text + .weather-text {
-  margin-top: 16px;
-  padding-top: 16px;
-  border-top: 1px solid var(--sage-light);
-}
-
-.weather-notes .weather-gear-btn {
-  margin-top: 16px;
+.weather-gear-text {
+  margin-top: 32px;
 }
 
 .weather-tips a,
