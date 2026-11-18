@@ -881,8 +881,26 @@ img {
   margin: 0;
 }
 
-.weather-carrier-note {
-  margin-bottom: 16px;
+.weather-notes {
+  margin-top: 28px;
+  background-color: white;
+  border-left: 4px solid var(--forest-green);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.weather-notes .weather-text strong {
+  color: var(--forest-green);
+}
+
+.weather-notes .weather-text + .weather-text {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--sage-light);
+}
+
+.weather-notes .weather-gear-btn {
+  margin-top: 16px;
 }
 
 .weather-tips a,
@@ -940,8 +958,7 @@ img {
   margin: 24px 0 0;
 }
 
-.weather-tips + .weather-list-label,
-.tip-callout + .weather-list-label {
+.weather-tips + .weather-list-label {
   margin-top: 36px;
 }
 
