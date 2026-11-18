@@ -881,20 +881,12 @@ img {
   margin: 0;
 }
 
-.weather-carrier-note {
-  margin-top: 20px;
-  background-color: var(--sage-light);
-  border-left: 4px solid var(--forest-green);
-  border-radius: 8px;
-  padding: 12px 18px;
+.weather-gear-box {
+  margin-top: 28px;
 }
 
-.weather-carrier-note strong {
-  color: var(--forest-green);
-}
-
-.weather-gear-text {
-  margin-top: 32px;
+.weather-gear-box li {
+  font-size: 1rem;
 }
 
 .weather-tips a,
