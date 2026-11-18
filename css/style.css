@@ -881,6 +881,10 @@ img {
   margin: 0;
 }
 
+.weather-carrier-note {
+  margin-bottom: 16px;
+}
+
 .weather-tips a,
 .weather-text a {
   color: var(--forest-green);
