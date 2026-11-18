@@ -936,7 +936,8 @@ img {
   margin: 24px 0 0;
 }
 
-.weather-tips + .weather-list-label {
+.weather-tips + .weather-list-label,
+.tip-callout + .weather-list-label {
   margin-top: 36px;
 }
 
