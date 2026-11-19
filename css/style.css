@@ -2004,6 +2004,42 @@ img {
   margin: 0;
 }
 
+/* Home tuition box: the class facts as a tidy list with small leaf markers */
+.price-facts {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 18px 0 0;
+  border-top: 1px solid rgba(122, 154, 109, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.price-facts li {
+  position: relative;
+  padding-left: 30px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--warm-brown);
+}
+
+.price-facts li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  width: 18px;
+  height: 18px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%237A9A6D' d='M20 4C11 4 5 8.5 5 15c0 1.6.4 3 1 4.2C7.5 15 10.5 11.5 15 9.5c-4 2.6-6.6 6-7.6 10.1.9.3 1.9.4 2.9.4C17 20 20 13 20 4z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.pricing-block .price-note--join {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(122, 154, 109, 0.3);
+}
+
 /* ===== Schedule Note ===== */
 .schedule-note {
   text-align: center;

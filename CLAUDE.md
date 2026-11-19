@@ -59,7 +59,7 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 ## Homepage hero line
 
 - The line under "Kids being kids in the forest." changes each season. It pairs one real moment from the trail with one real messy moment from the stations, taken from that season's lesson plans. Avoid lists of three.
-- Current (fall 2026, written by the owner for mushroom week): "This fall we're watching the forest change, from the first yellow leaves to the mushrooms that come up after the rain." The owner wants it to stay for now, so do not swap it back or flag that it skips the stations moment. Swap for winter when the Winter term starts December 2.
+- Current (late fall 2026, first frosty mornings, set November 19): "On these first frosty mornings we're crunching over icy leaves on the trail and getting ready for winter, just like the beavers and owls in our woods." Ties to the Dec 2 to Dec 16 themes (Preparing for Winter, Beavers, Solstice and owls).
 
 ## Photos
 
