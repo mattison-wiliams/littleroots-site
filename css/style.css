@@ -3492,6 +3492,19 @@ summary.gear-start-callout-title::after {
   border-top: 1px solid rgba(122,154,109,.25);
 }
 
+/* travel fee note and mini list inside the In person rate box */
+.tutor-rate-note--list {
+  padding-bottom: 6px;
+}
+
+.tutor-travel-list {
+  list-style: disc;
+  margin: 0;
+  padding: 0 0 16px 1.2em;
+  font-size: 0.98rem;
+  line-height: 1.65;
+}
+
 .tutor-callouts {
   display: grid;
   grid-template-columns: 2fr 3fr;
