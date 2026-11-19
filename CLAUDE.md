@@ -59,7 +59,7 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 ## Homepage hero line
 
 - The line under "Kids being kids in the forest." changes each season. It pairs one real moment from the trail with one real messy moment from the stations, taken from that season's lesson plans. Avoid lists of three.
-- Current (late fall 2026, first frosty mornings, set November 19, written by the owner): "This time of year we're bundled up and stomping through puddles, and getting ready for winter, just like the beavers and owls in our woods." Ties to the Dec 2 to Dec 16 themes (Preparing for Winter, Beavers, Solstice and owls).
+- Current (fall 2026, written by the owner for mushroom week): "This fall we're watching the forest change, from the first yellow leaves to the mushrooms that come up after the rain." On November 19 the owner tried a late fall version ("This time of year we're bundled up and stomping through puddles...") but chose to hold off. She likes the puddles part. A new line should keep it and pair it with a real stations moment she gives. Do not swap it without her.
 
 ## Photos
 
