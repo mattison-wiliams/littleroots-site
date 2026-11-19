@@ -1711,6 +1711,12 @@ img {
   border-radius: 12px;
 }
 
+.belief-photo--tall {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .belief-photo-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
