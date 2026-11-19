@@ -1722,6 +1722,10 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.belief-photo-row .belief-photo-wide {
+  grid-column: 1 / -1;
+}
+
 .belief-photo-row figure {
   margin: 0;
 }
