@@ -59,7 +59,7 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 ## Homepage hero line
 
 - The line under "Kids being kids in the forest." changes each season. It pairs one real moment from the trail with one real messy moment from the stations, taken from that season's lesson plans. Avoid lists of three.
-- Current (late fall 2026, first frosty mornings, set November 19): "On these first frosty mornings we're crunching over icy leaves on the trail and getting ready for winter, just like the beavers and owls in our woods." Ties to the Dec 2 to Dec 16 themes (Preparing for Winter, Beavers, Solstice and owls).
+- Current (late fall 2026, first frosty mornings, set November 19, softened so it doesn't sound too cold): "On these crisp mornings we're bundled up on the trail, spotting a little frost and getting ready for winter, just like the beavers and owls in our woods." Ties to the Dec 2 to Dec 16 themes (Preparing for Winter, Beavers, Solstice and owls).
 
 ## Photos
 
