@@ -3500,9 +3500,16 @@ summary.gear-start-callout-title::after {
 .tutor-travel-list {
   list-style: disc;
   margin: 0;
-  padding: 0 0 16px 1.2em;
+  padding: 0 0 8px 1.2em;
   font-size: 0.98rem;
   line-height: 1.65;
+}
+
+.tutor-travel-alt {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  margin: 0;
+  padding: 0 0 16px;
 }
 
 .tutor-callouts {
