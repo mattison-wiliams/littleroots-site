@@ -1517,6 +1517,10 @@ img {
   border-radius: 12px;
 }
 
+.tl-photo--wide {
+  max-width: 480px;
+}
+
 /* ===== FAQ Accordion ===== */
 .faq-list {
   max-width: 800px;
