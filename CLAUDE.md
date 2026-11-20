@@ -22,7 +22,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
   - The dash the owner dislikes is the em dash (—). A plain hyphen like "K-8" is fine. Do not flag "K-8" or treat it as a dash problem.
 - Words for the adult who comes to class: use "you" when talking to the parent reading the page, "parent or caregiver" for rules (like who has to stay), and "parents and caregivers" in search and link preview descriptions. "Grown-ups" (with the hyphen) is allowed in playful spots, like the question of the day.
 - November 2026: the owner chose to remove the prorated example prices ($74, $49) from the Enroll page and FAQ. The site just says the first month is prorated and she emails the exact amount. Do not add the examples back. December 2026 is $74 for everyone (three classes, break December 23 and 30), shown in the December box on the Enroll page.
-- Prorating math, for reference: $99 minus $25 for each Wednesday missed in the first month (three left is $74, two left is $49). Don't describe it as "$25 for each Wednesday left" (3 x $25 is $75, not $74).
+- Prorating math, for reference (updated November 20, 2026 by the owner): $24 for each class left in the first month, up to $74. One left is $24, two left is $48, three or more left is $74. The older $49 figure for two classes is no longer used.
 - November 20, 2026: the owner said that after a $15 trial class, the rest of that month is "$24 for each class left, up to $74." This wording is on the Enroll page (step 1) and the FAQ trial answer. The $15 trial does not count toward tuition.
 - Monthly tuition bills on the 1st of each month.
 - Babies under 12 months: $49 a month when joining on their own, free with a paid sibling (FAQ).
