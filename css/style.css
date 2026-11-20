@@ -1755,6 +1755,13 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* an odd photo out at the end sits centered instead of leaving a gap */
+.belief-photo-row--two > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 6px);
+}
+
 .belief-photo-row figure {
   margin: 0;
 }
