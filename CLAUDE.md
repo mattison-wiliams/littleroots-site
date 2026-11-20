@@ -25,6 +25,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 - Prorating math, for reference: $99 minus $25 for each Wednesday missed in the first month (three left is $74, two left is $49). Don't describe it as "$25 for each Wednesday left" (3 x $25 is $75, not $74).
 - November 20, 2026: the owner said that after a $15 trial class, the rest of that month is "$24 for each class left, up to $74." This wording is on the Enroll page (step 1) and the FAQ trial answer. The $15 trial does not count toward tuition.
 - Monthly tuition bills on the 1st of each month.
+- Babies under 12 months: $49 a month when joining on their own, free with a paid sibling (FAQ).
 - Use "a month" for prices (for example "$99 a month"), not "/month" or "per month".
 - Ages are written "ages 1 to 3".
 - Grade ranges are written "K to 8" (also "K to 5", "K to 3", and so on) to stay consistent across the site, even though "K-8" isn't against the style rules.
