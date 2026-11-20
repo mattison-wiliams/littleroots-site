@@ -294,6 +294,16 @@ img {
   font-style: italic;
 }
 
+/* homepage: plain line saying what the class is, right under the headline */
+.hero .hero-what {
+  max-width: 520px;
+  margin: 0 auto 12px;
+  color: #FFF9F0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 /* Photo hero (homepage) — light text over dark image */
 .hero--photo h1 {
   color: var(--cream);
