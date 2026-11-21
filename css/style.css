@@ -3918,3 +3918,17 @@ summary.gear-start-callout-title::after {
 .register-after-title {
   margin-top: 64px;
 }
+
+/* tutoring page: "I can" steps under each example goal */
+.weather-tips .tutor-goal-steps {
+  list-style: disc;
+  padding-left: 1.25em;
+  margin: 8px 0 0;
+}
+
+.weather-tips .tutor-goal-steps li {
+  padding: 2px 0;
+  border-bottom: none;
+  font-size: 1rem;
+  line-height: 1.6;
+}
