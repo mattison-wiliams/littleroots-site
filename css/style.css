@@ -2957,6 +2957,19 @@ img {
   color: var(--forest-green);
 }
 
+.price-note--december {
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--forest-green);
+}
+
+.price-note--december a {
+  color: var(--forest-green);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .price-note--group {
   align-self: center;
   margin-bottom: 4px;

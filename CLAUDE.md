@@ -25,6 +25,7 @@ Simple static HTML/CSS site hosted on Netlify. Netlify publishes whatever is on 
 - November 20, 2026: almost every family starts with a trial, so the Enroll page order is: intro, "Start With a Trial Class", "Choose How to Pay", then "Ready to Enroll?" (just the enrollment form button, no pay step. How to pay is in the Monthly and Winter cards). The top of the page says when and where class meets and that a parent or caregiver stays.
 - Prorating math, for reference (updated November 20, 2026 by the owner): $24 for each class left in the first month, up to $74. One left is $24, two left is $48, three or more left is $74. The older $49 figure for two classes is no longer used.
 - November 20, 2026: the owner said that after a $15 trial class, the rest of that month is "$24 for each class left, up to $74." This wording is in the "Start With a Trial Class" section of the Enroll page and the FAQ trial answer. The $15 trial does not count toward tuition.
+- November 22, 2026: the homepage tuition box has a line under the price: "December is $74 because we have three classes. See why" (links to the December box on the Enroll page). Remove it in early January 2027, when monthly is back to $99.
 - Monthly tuition bills on the 1st of each month.
 - Babies under 12 months: $49 a month when joining on their own, free with a paid sibling (FAQ).
 - Use "a month" for prices (for example "$99 a month"), not "/month" or "per month".
