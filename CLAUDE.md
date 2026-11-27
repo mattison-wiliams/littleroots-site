@@ -74,6 +74,17 @@ Exception the owner chose to keep: "That's where my love of early childhood firs
 - Check how the photo is cropped on both phone and computer screen sizes.
 - Do not re-compress the existing banner photos to make pages faster. It was tried and made them blurry.
 
+## Accessibility
+
+- November 27, 2026: added an Accessibility page (`accessibility.html`). It is linked at the end of the footer link row on every page, so any new page needs that footer link too, plus the "Skip to main content" link and one `<h1>`.
+- The page makes promises to visitors, so keep them true: photos have alt text, every page has the skip link and headings in order (no skipped levels), links that open a new tab have the hidden "(opens in new tab)" note (`<span class="sr-only">`), the menus and buttons work with a keyboard, and nothing scrolls sideways on phones.
+- The page also says the sign-up forms are made by Jotform and offers help by email, and that the 2026 to 2027 calendar PDF may not read well in a screen reader. The calendar PDF is not set up for screen readers (the family handbook is). If the calendar is remade as a tagged PDF, update that line.
+- When a link's words are vague or repeated but it goes somewhere different (like "try your first class for $15" that goes to the Enroll page instead of the booking form), add hidden screen reader text with `<span class="sr-only">` instead of changing the visible words.
+- Do not flag the repeated "Enroll" links. They all go to the same page, which is fine. Do not flag the round arrow at the bottom right of long pages as an empty "#" link. It is the "Back to top" button, it has a name, and it stays hidden until you scroll.
+- For sage-green text on the cream background use `--sage-text`, not `--sage`. `--sage` is too pale to read (about 3 to 1).
+- The FAQ search box has a darker green outline on purpose (the old pale one was hard to see).
+- Text over banner photos is readable, but about 20 spots measured a little under the strict contrast guideline (November 27, 2026). The weakest are the small italic line under banner titles, the FAQ and Stations banners on phones, and the "No experience needed" band on phones. The owner has not decided whether to darken those photos. Do not change the photo overlays without asking.
+
 ## Before publishing
 
 - Preview changed pages at phone and computer widths and make sure nothing scrolls sideways on phones.
