@@ -356,7 +356,7 @@ img {
 }
 
 .hero-text-block {
-  background-color: rgba(46, 94, 46, 0.65);
+  background-color: rgba(40, 84, 40, 0.80);
   border-radius: 16px;
   padding: 36px 44px;
   max-width: 600px;
@@ -1136,8 +1136,9 @@ img {
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,.08) 0%,
-    rgba(0,0,0,.02) 35%,
-    rgba(0,0,0,.55) 100%
+    rgba(0,0,0,.14) 30%,
+    rgba(0,0,0,.50) 58%,
+    rgba(0,0,0,.74) 100%
   );
 }
 
@@ -1190,8 +1191,9 @@ img {
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,.08) 0%,
-    rgba(0,0,0,.02) 35%,
-    rgba(0,0,0,.55) 100%
+    rgba(0,0,0,.14) 30%,
+    rgba(0,0,0,.50) 58%,
+    rgba(0,0,0,.74) 100%
   );
 }
 
@@ -1244,8 +1246,9 @@ img {
   background: linear-gradient(
     to bottom,
     rgba(0,0,0,.08) 0%,
-    rgba(0,0,0,.02) 35%,
-    rgba(0,0,0,.55) 100%
+    rgba(0,0,0,.14) 30%,
+    rgba(0,0,0,.50) 58%,
+    rgba(0,0,0,.74) 100%
   );
 }
 
@@ -2136,7 +2139,7 @@ img {
 .crown-photo-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(12,32,14,.15) 0%, rgba(12,32,14,.88) 100%);
+  background: linear-gradient(to bottom, rgba(12,32,14,.30) 0%, rgba(12,32,14,.9) 100%);
   z-index: 1;
 }
 
